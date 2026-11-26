@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GameZone: seu próximo nível começa aqui. Loja gamer demonstrativa com catálogo offline, pesquisa e carrinho.">
+  <meta name="theme-color" content="#0c0d15">
+  <title>GameZone — Seu próximo nível começa aqui</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238b5cf6'/%3E%3Cpath d='M37 9 17 36h14l-4 19 21-28H34z' fill='white'/%3E%3C/svg%3E">
+  <style>
+:root{color-scheme:dark;--bg:#0c0d15;--panel:#141520;--panel2:#191a27;--line:#2a2b3c;--text:#f5f4fc;--muted:#a6a5bc;--purple:#a78bfa;--cyan:#65e6db;--button:#7951dc;--focus:#65e6db;--radius:16px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;scroll-behavior:smooth;scroll-padding-top:105px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-size:14px;line-height:1.5}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}button,a{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}button,a,input,select{outline-offset:4px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--focus)}a{color:inherit;text-decoration:none}button{color:inherit}button:not(.primary):hover{filter:brightness(1.18)}[hidden]{display:none!important}.shell{max-width:1260px;margin:auto;padding:0 40px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip{position:fixed;top:-100px;left:16px;z-index:50;background:var(--cyan);color:#10131b;padding:12px}.skip:focus{top:12px}.topline{background:#141322;border-bottom:1px solid #262137;color:#c2b3e6;font-size:10px;letter-spacing:1.4px}.topline .shell{display:flex;justify-content:space-between;padding-top:9px;padding-bottom:9px}.topline b{padding:0 9px}.dot{display:inline-block;width:6px;height:6px;background:var(--cyan);border-radius:50%;margin-right:8px;box-shadow:0 0 12px #65e6db44}.topline .dot{background:var(--purple)}header{background:#0c0d15ee;backdrop-filter:blur(18px);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}.header-row{display:flex;align-items:center;justify-content:space-between;gap:20px;height:88px}.brand{display:inline-flex;align-items:center;gap:9px;font-size:23px;letter-spacing:-1px;font-weight:900;line-height:1.1}.brand-end{color:var(--purple)}.brand small{display:block;font-size:8px;letter-spacing:3.4px;font-weight:500;color:var(--muted);padding-top:7px}.brand-icon{height:40px;width:35px;border-radius:10px;display:grid;place-items:center;font-size:40px;background:linear-gradient(140deg,#a17bff,#5731ac);color:white;font-weight:700}.header-row nav{display:flex;align-items:center;gap:28px;font-size:13px;margin-left:auto;margin-right:45px}.header-row nav a{padding:32px 0}.nav-active{border-bottom:2px solid var(--purple)}.header-row nav button{border:0;background:none;color:var(--muted);padding:14px 0}.header-row nav button span{margin-left:6px}.header-actions{display:flex;gap:12px;align-items:center}.icon-btn{display:grid;place-items:center;border:1px solid var(--line);background:transparent;border-radius:9px;min-width:40px;min-height:40px;font-size:24px}.cart-open{background:#1e1930;border:1px solid #443361;padding:11px 15px;border-radius:9px;display:flex;gap:10px;align-items:center;font-size:12px}.cart-open>span:first-child{font-size:20px;line-height:1}.cart-open b{display:grid;place-items:center;min-width:22px;height:22px;border-radius:5px;background:#8056db;color:#fff;font-size:11px;padding:0 4px}.hero{margin-top:30px;display:grid;grid-template-columns:1.08fr 1fr;min-height:410px;background:radial-gradient(ellipse at 90% 40%,#33215c 0,transparent 64%),linear-gradient(110deg,#181626,#15121f);border:1px solid #322844;border-radius:20px;overflow:hidden;position:relative}.hero-copy{padding:40px 0 37px 40px;position:relative;z-index:1}.eyebrow{font-size:9px;font-weight:700;letter-spacing:2px;color:#c8b8ed;display:inline-block}.hero h1{font-size:clamp(34px,3.6vw,52px);letter-spacing:-2.1px;line-height:1.08;margin:19px 0 17px;font-weight:780}.hero h1 em{font-style:normal;color:var(--purple)}.hero-copy>p{font-size:13px;line-height:1.8;color:#b7b0c9;margin:0 0 24px}.primary{display:inline-flex;justify-content:center;align-items:center;gap:24px;background:var(--button);color:white;border:1px solid #a17af1;border-radius:8px;font-weight:650;padding:13px 18px;min-height:44px;font-size:12px;transition:background .15s,transform .15s}.primary:hover{background:#9267ed;transform:translateY(-1px)}.primary:disabled{transform:none}.hero-meta{display:flex;gap:20px;font-size:9px;color:#b0a4c5;margin-top:22px}.hero-meta>span>span{color:var(--cyan);margin-right:4px}.hero-art{position:relative;display:grid;place-items:center;min-width:0;isolation:isolate;background:linear-gradient(transparent 97%,#a78bfa08 97%),linear-gradient(90deg,transparent 97%,#a78bfa08 97%);background-size:35px 35px}.hero-art:after{content:"";width:70%;height:20px;border-radius:50%;background:#050208;filter:blur(15px);position:absolute;bottom:56px;z-index:-1}.hero-headset{width:95%;max-width:410px;transform:rotate(-13deg);filter:drop-shadow(0 14px 18px #070410);z-index:1}.orbit{position:absolute;border:1px solid #8461ba32;border-radius:50%;width:320px;height:320px;transform:rotate(-25deg) scaleX(1.1)}.orbit-two{width:380px;height:380px;border-style:dashed;border-color:#8461ba22}.hero-number{position:absolute;right:25px;top:25px;font-size:8px;letter-spacing:3px;color:#9382b1}.cross{position:absolute;color:#8c79b3;font-size:22px;font-weight:200}.cross-one{left:20px;top:30px}.cross-two{right:28px;bottom:60px}.art-label{position:absolute;bottom:26px;font-size:8px;letter-spacing:2px;color:#c4b2e2;z-index:2}.floating-spec{position:absolute;right:18px;top:45%;z-index:3;display:flex;flex-direction:column;gap:1px;padding:13px 17px;border:1px solid #69508e77;border-radius:10px;background:#2c224666;backdrop-filter:blur(8px);transform:rotate(5deg)}.floating-spec>span{font-size:8px;letter-spacing:2px;color:#c6b1e0}.floating-spec strong{font-size:31px;font-weight:650;line-height:1.1}.floating-spec small{font-size:6px;letter-spacing:1px;color:#c6b1e0}.benefits{display:grid;grid-template-columns:repeat(3,1fr);padding:26px 0;border-bottom:1px solid var(--line);gap:20px}.benefits>div{display:flex;align-items:center;gap:14px;justify-content:center}.benefits>div+div{border-left:1px solid var(--line)}.benefit-icon{color:var(--purple);font-size:29px;font-weight:300}.benefits strong,.benefits small{display:block}.benefits strong{font-size:11px;font-weight:600}.benefits small{font-size:10px;color:var(--muted);margin-top:2px}.catalog{padding-top:41px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:15px}.muted{color:var(--muted)}h2{font-size:25px;letter-spacing:-.8px;line-height:1.2;margin:8px 0 0}h2>span{color:var(--purple)}.local-chip{display:flex;align-items:center;border:1px solid #284139;background:#14211f;color:#9cd3c0;font-size:9px;padding:6px 10px;border-radius:6px;white-space:nowrap}.local-chip .dot{width:5px;height:5px}.search-row{display:flex;gap:10px;margin-top:24px}.search-box{display:flex;align-items:center;flex:1;gap:10px;border:1px solid #343148;border-radius:9px;background:#161622;min-width:0;padding:6px 7px 6px 16px}.search-box>span{font-size:27px;color:#9790ac;line-height:1}.search-box input{min-width:0;flex:1;border:0;background:transparent;color:var(--text);padding:6px;font-size:12px;height:34px}.search-box input::placeholder{color:#9690a8;opacity:1}.search-box:focus-within{border-color:var(--purple)}.search-box input:focus-visible{outline-offset:0}.search-submit{border:1px solid #4b3c65;background:#2c2441;border-radius:6px;padding:9px 15px;font-size:11px}#clear-search{border:0;background:transparent;font-size:24px;min-width:30px}.voice-btn{display:flex;align-items:center;justify-content:center;gap:9px;padding:12px 20px;border:1px solid #493465;border-radius:9px;background:#231b32;color:#dac6ff;font-size:11px;white-space:nowrap}.filter-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:20px}.categories{display:flex;gap:7px;overflow:auto;padding:3px 3px 7px;scrollbar-width:thin}.category{background:transparent;border:1px solid var(--line);border-radius:7px;padding:8px 13px;font-size:10px;color:var(--muted);white-space:nowrap;min-height:36px}.category[aria-pressed=true]{background:#302442;border-color:#7e56ac;color:#e5d6ff}.sort-wrap select{width:141px;max-width:100%;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:#d6d1e2;padding:8px;font-size:10px;min-height:36px}.results-row{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:14px 0 16px;color:var(--muted);font-size:10px}.availability-toggle{display:flex;align-items:center;gap:7px}.availability-toggle input{accent-color:#9465ed;width:14px;height:14px}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.product{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);display:flex;flex-direction:column;transition:border-color .2s,transform .2s}.product:hover{border-color:#70538e;transform:translateY(-3px)}.product-art{height:181px;position:relative;background:radial-gradient(ellipse at 50% 55%,#3b2c5a88,transparent 70%),linear-gradient(150deg,#1e1b30,#151520);display:grid;place-items:center}.product-art:after{position:absolute;content:"+";color:#71628f;font-size:15px;right:14px;bottom:8px;font-weight:200}.product:nth-child(4n+2) .product-art{background:radial-gradient(ellipse at 50% 55%,#26394a99,transparent 70%),#141c25}.product:nth-child(4n+3) .product-art{background:radial-gradient(ellipse at 50% 55%,#283d4488,transparent 70%),#141d22}.product-art img{width:83%;height:138px;object-fit:contain;filter:drop-shadow(0 10px 9px #05040888);transition:transform .2s}.product:hover img{transform:translateY(-3px)}.product-badge{position:absolute;top:12px;left:12px;font-size:7px;color:#d4c0f6;letter-spacing:1px;background:#29213a;border:1px solid #72528e66;border-radius:4px;padding:4px 6px}.product-info{padding:15px;display:flex;flex-direction:column;flex:1}.product-category{font-size:8px;color:var(--purple);text-transform:uppercase;letter-spacing:1.6px}.product h3{font-size:13px;letter-spacing:-.25px;margin:7px 0 8px;line-height:1.4;min-height:36px}.product-description{font-size:10px;color:var(--muted);line-height:1.6;margin:0 0 10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:32px}.stock{font-size:8px;color:#9cdac7;display:block;margin-bottom:11px}.stock.unavailable{color:#f7c686}.product-price{font-size:21px;font-weight:750;letter-spacing:-.5px;margin:0 0 13px}.product-price small{font-weight:400;font-size:8px;color:var(--muted);letter-spacing:0;display:block;margin-top:2px}.product-bottom{display:flex;gap:6px;margin-top:auto}.product-bottom .add-btn{flex:1;border:1px solid #7357a2;background:#38264e;color:#ece0ff;border-radius:6px;min-height:36px;padding:7px;font-size:10px;font-weight:600}.details-btn{border:1px solid #40384f;background:transparent;color:#c8badd;border-radius:6px;font-size:15px;width:36px;min-height:36px}.data-panel{display:flex;align-items:center;gap:25px;margin:40px 0 34px;padding:27px 30px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(100deg,#1b192a,#11151f)}.data-icon{font-size:38px;color:var(--purple);border:1px solid #5e497f;background:#2a223b;border-radius:12px;width:70px;height:70px;display:grid;place-items:center;flex-shrink:0;font-weight:200}.data-panel h2{font-size:21px;margin:7px 0}.data-panel p{color:var(--muted);font-size:11px;margin:0;line-height:1.7}.data-actions{margin-left:auto;display:flex;flex-direction:column;gap:5px;flex-shrink:0}.secondary{border:1px solid #59436f;background:#292039;color:#e3d4f7;font-size:11px;border-radius:7px;padding:11px 16px;min-height:40px}.text-button{border:0;background:transparent;color:var(--muted);padding:10px;font-size:11px;min-height:38px}.data-panel .storage-status{font-size:9px;margin-top:8px;color:#9cd3c0}.storage-status.warning{color:#ffd18f!important}footer{border-top:1px solid var(--line);padding-top:25px!important;padding-bottom:28px!important}footer .footer-row{display:flex;align-items:center;gap:20px;margin-bottom:15px}.footer-brand{font-size:17px;gap:0}footer .footer-row>span:nth-child(2){font-size:10px;color:var(--muted)}footer button{margin-left:auto}footer p{font-size:9px;color:var(--muted);margin:4px 0}.empty{text-align:center;border:1px dashed var(--line);border-radius:14px;padding:50px 20px}.empty>span{font-size:40px;color:var(--purple)}.empty h3{font-size:20px}.empty p{color:var(--muted)}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);max-width:calc(100vw - 30px);width:max-content;border:1px solid #6c5796;box-shadow:0 12px 45px #0009;border-radius:10px;background:#2b2240;color:#f4edff;padding:13px 22px;z-index:30;font-size:12px}.toast.error{border-color:#e99b90;background:#402429}dialog{color:var(--text);background:var(--panel);border:1px solid #514064;border-radius:16px;padding:26px;width:min(500px,calc(100% - 24px));max-height:calc(100dvh - 30px);overflow:auto;box-shadow:0 30px 90px #0009}dialog::backdrop{background:#06060bba;backdrop-filter:blur(5px)}body:has(dialog[open]){overflow:hidden}.dialog-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}.dialog-header h2{font-size:22px;margin-top:0}.dialog-header .eyebrow+h2{margin-top:7px}dialog p,dialog li{font-size:12px;line-height:1.8;color:#c2bcd2}dialog h3{font-size:14px;margin-top:23px}.fine{font-size:10px!important;color:var(--muted)!important}.full{width:100%}.cart-dialog{position:fixed;inset:0 0 0 auto;margin:0;height:100dvh;max-height:100dvh;border-radius:16px 0 0 16px;width:min(440px,100%);display:none}.cart-dialog[open]{display:flex;flex-direction:column}.cart-dialog .dialog-header{flex-shrink:0}#cart-lines{overflow:auto;flex:1}.cart-empty{padding:50px 10px;text-align:center;color:var(--muted)}.cart-line{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}.cart-line img{width:64px;height:64px;object-fit:contain;background:var(--panel2);border-radius:8px}.cart-line h3{font-size:12px;margin:0 0 4px}.line-price{font-size:11px;color:var(--muted);margin:0 0 10px}.line-bottom{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:6px;overflow:hidden}.qty button{border:0;background:var(--panel2);width:32px;height:32px}.qty span{padding:0 10px;font-size:12px;min-width:30px;text-align:center}.remove{font-size:10px;background:transparent;color:var(--muted);border:0;padding:8px}.subtotal{font-size:12px;margin-left:auto}.cart-summary{padding-top:20px;flex-shrink:0;border-top:1px solid var(--line);margin-top:20px}.cart-summary>div{display:flex;justify-content:space-between;align-items:center;font-size:12px}.cart-summary strong{font-size:25px;color:var(--text)}.cart-summary>p{font-size:10px}.cart-summary .primary{margin-top:10px}.detail-art{width:100%;height:190px;object-fit:contain;background:radial-gradient(ellipse,#392954,transparent 70%);border-radius:10px}#detail-content h2{margin-top:16px}.spec-list{padding:0;list-style:none;display:flex;gap:7px;flex-wrap:wrap}.spec-list li{border:1px solid #4d3c66;background:#251e33;border-radius:5px;padding:4px 8px;font-size:10px}.detail-price{font-size:28px;font-weight:700;color:var(--text)!important}.voice-orb{width:100px;height:100px;border:1px solid #7c5cae;border-radius:50%;display:grid;place-items:center;margin:25px auto 15px;font-size:56px;color:var(--purple);background:radial-gradient(circle,#59407b55,transparent)}.voice-orb.listening{animation:pulse 1s infinite}.voice-status{text-align:center;min-height:40px;color:var(--cyan)}.success-mark{margin:10px 0 20px;border-radius:50%;width:64px;height:64px;display:grid;place-items:center;background:#213e35;color:var(--cyan);font-size:30px}#receipt-summary{border-block:1px solid var(--line);margin:20px 0;padding:10px 0;font-size:12px}#receipt-summary>div{display:flex;gap:18px;justify-content:space-between;padding:6px 0}.receipt-total{font-size:20px!important;font-weight:700}.guide{padding-left:20px}.guide li{padding:7px 0}.high-contrast{--bg:#000;--panel:#080808;--panel2:#161616;--line:#828282;--text:#fff;--muted:#ddd;--purple:#ddc6ff;--cyan:#8affd8;--button:#573094}.high-contrast .hero,.high-contrast .product-art,.high-contrast .data-panel{background:#101010}.high-contrast .product-category,.high-contrast .stock,.high-contrast .eyebrow{color:#e1d0ff}.high-contrast .product-description{color:#eee}.high-contrast button{border-color:#b7a5cd}.high-contrast .category,.high-contrast .hero-meta,.high-contrast .hero-copy>p{color:#eee}@keyframes pulse{50%{box-shadow:0 0 0 12px #8b5cf622}}
+@media(min-width:1500px){.hero h1{font-size:52px}}@media(max-width:1024px){.shell{padding:0 24px}.header-row nav{margin-right:12px;gap:18px}.hero-copy{padding-left:28px}.hero h1{font-size:43px}.hero-meta{gap:10px;font-size:8px}.products{grid-template-columns:repeat(3,minmax(0,1fr))}.filter-bar{align-items:flex-start;gap:10px}.categories{flex-wrap:wrap;overflow:visible}.product-art{height:180px}.floating-spec{right:10px}.hero-art .orbit{width:260px;height:260px}.hero-art .orbit-two{width:310px;height:310px}}
+@media(max-width:760px){.shell{padding:0 18px}.topline{font-size:8px;letter-spacing:.7px}.topline .shell>span:last-child{font-size:8px;letter-spacing:0}.header-row{height:74px;gap:10px}.brand{font-size:20px}.brand-icon{height:34px;width:29px;font-size:34px}.brand small{font-size:6px;letter-spacing:3px}.header-row nav{margin:0 0 0 auto;gap:12px}.header-row nav a{display:none}.header-row nav button{font-size:11px}.header-actions{gap:7px}.cart-open{padding:8px;gap:6px;min-height:40px}.cart-open>span:first-child{display:none}.icon-btn{min-width:36px;min-height:38px}.hero{grid-template-columns:1.1fr .9fr;min-height:340px;margin-top:20px}.hero-copy{padding:28px 0 28px 23px}.hero h1{font-size:34px;letter-spacing:-1.4px}.hero-copy>p{font-size:11px}.hero .eyebrow{font-size:7px;letter-spacing:1.2px}.hero .primary{font-size:10px;gap:10px;padding:11px}.hero-meta{flex-direction:column;gap:5px;margin-top:17px}.hero-headset{width:140%;max-width:none;transform:rotate(-15deg) translateX(-4px)}.floating-spec{top:50%;padding:8px;right:10px}.floating-spec strong{font-size:24px}.hero-number{font-size:6px;letter-spacing:1px;right:14px}.art-label{font-size:6px;letter-spacing:.6px;bottom:24px;right:12px}.hero-art .orbit{width:210px;height:210px}.hero-art .orbit-two{width:250px;height:250px}.benefits{gap:8px;padding:19px 0}.benefits>div{gap:8px;justify-content:flex-start}.benefits>div+div{padding-left:12px}.benefits strong{font-size:9px}.benefits small{font-size:8px}.benefit-icon{font-size:23px}.catalog{padding-top:30px}.section-heading h2{font-size:23px}.section-heading .eyebrow{font-size:8px}.local-chip{font-size:8px;padding:5px 7px}.search-row{gap:7px}.voice-btn{font-size:10px;padding:10px;gap:6px}.search-box{gap:5px;padding-left:10px}.search-box input{font-size:11px}.search-submit{padding:8px 10px}.filter-bar{gap:12px}.sort-wrap{padding-top:3px}.sort-wrap select{width:130px}.category{padding:7px 10px;font-size:9px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-art{height:170px}.product-art img{height:130px}.product-info{padding:13px}.product h3{font-size:12px}.product-price{font-size:20px}.data-panel{gap:17px;padding:24px 20px}.data-icon{display:none}.data-panel h2{font-size:20px}.data-panel p{font-size:10px}.data-actions .secondary{font-size:10px;padding:10px}.data-panel .eyebrow{font-size:7px}footer .footer-row{gap:14px}footer .footer-row>span:nth-child(2){font-size:9px}footer .text-button{font-size:10px}}
+@media(max-width:440px){.header-row nav{display:none}.header-actions{margin-left:auto}.cart-open{font-size:10px}.topline .shell>span:last-child{font-size:7px}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:28px 24px 28px;max-width:100%}.hero h1{font-size:37px}.hero-copy>p{font-size:12px}.hero .primary{font-size:11px}.hero-meta{flex-direction:row;font-size:7px;gap:15px}.hero-art{height:212px;border-top:1px solid #34274a;overflow:hidden}.hero-headset{width:230px;max-width:75%;height:230px;transform:rotate(-14deg);margin-top:-8px}.hero-art .orbit{width:200px;height:200px}.hero-art .orbit-two{width:240px;height:240px}.floating-spec{top:35%;right:25px}.hero-number{right:19px;top:17px}.art-label{bottom:13px;left:20px}.cross-one{left:27px;top:35px}.hero-art:after{bottom:30px}.benefits{gap:7px}.benefits>div{gap:7px;align-items:flex-start}.benefits>div+div{padding-left:9px}.benefit-icon{display:none}.benefits strong{font-size:8px}.benefits small{font-size:7px;line-height:1.6}.section-heading{align-items:flex-start}.section-heading h2{font-size:22px;max-width:230px}.local-chip{font-size:7px;padding:5px;margin-top:17px}.local-chip .dot{margin-right:4px}.search-row{flex-wrap:wrap}.search-box{flex-basis:100%}.voice-btn{width:100%;padding:9px;min-height:38px}.filter-bar{flex-direction:column;gap:4px}.categories{gap:5px}.category{padding:7px 9px;min-height:34px}.sort-wrap{align-self:flex-end}.results-row{margin-top:11px;gap:7px;font-size:9px}.availability-toggle{gap:4px;font-size:8px}.products{gap:10px}.product-art{height:135px}.product-art img{height:102px;width:90%}.product-badge{font-size:5px;letter-spacing:.5px;top:9px;left:8px;padding:3px 4px}.product-info{padding:11px}.product-category{font-size:7px}.product h3{font-size:11px;min-height:32px;margin-bottom:7px}.product-description{font-size:9px;line-height:1.6;min-height:29px}.stock{font-size:7px}.product-price{font-size:18px;margin-bottom:10px}.product-price small{font-size:7px}.product-bottom{flex-wrap:wrap;gap:5px}.product-bottom .add-btn{font-size:9px;padding:6px}.details-btn{width:30px;min-height:34px}.data-panel{flex-direction:column;align-items:flex-start;gap:17px}.data-actions{margin:0;flex-direction:row;align-items:center;gap:15px}.data-panel p{font-size:11px}.data-panel .eyebrow{font-size:8px}.desktop{display:none}footer .footer-row{gap:10px;flex-wrap:wrap}footer .footer-row>span:nth-child(2){font-size:8px}.footer-brand{font-size:15px}footer p{font-size:8px}dialog{padding:21px}.cart-dialog{padding:22px}.dialog-header h2{font-size:20px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Busca por voz aprimorada */
+.voice-hint{font-size:10px;color:var(--muted);margin:9px 0 0;line-height:1.7;overflow-wrap:anywhere}
+.voice-dialog{width:min(530px,calc(100% - 24px))}.voice-dialog h2{margin-top:7px}.voice-mode-label{display:block;font-size:11px;color:var(--muted);margin:17px 0 7px}#voice-mode{width:100%;background:var(--panel2);border:1px solid #59436f;border-radius:8px;padding:12px;color:var(--text);font-size:11px;min-height:43px}.voice-dialog .voice-orb{width:90px;height:90px;margin:24px auto 12px}.voice-engine{text-align:center!important;font-size:10px!important;color:var(--muted)!important;margin:0}.voice-dialog .voice-status{font-size:12px;min-height:42px;line-height:1.6;color:var(--cyan);margin:9px 0 14px}.voice-error{color:#ffc79f!important}.transcript-box{border:1px solid #483757;background:#1d1828;border-radius:10px;padding:15px;margin-bottom:17px;min-height:89px}.transcript-box>span{font-size:8px;letter-spacing:1.6px;color:var(--purple)}#voice-transcript{font-size:15px;color:var(--text);margin:8px 0 0;overflow-wrap:anywhere}.voice-controls{display:flex;gap:9px;align-items:stretch}.voice-controls .primary{flex:1}.voice-controls .secondary{flex-shrink:0}#voice-results{margin-top:10px}.voice-examples{margin-top:22px}.voice-examples>span{font-size:10px;color:var(--muted)}.voice-examples>div{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}.voice-examples>div>span{border:1px solid var(--line);border-radius:5px;color:#d4c1ec;padding:5px 7px;font-size:9px}.voice-dialog[data-voice-state="done"] .transcript-box{border-color:#498374;background:#172922}.high-contrast .transcript-box{background:#090909;border-color:#bbb}.high-contrast .voice-examples>div>span{color:#fff}.voice-btn:focus-visible{outline:3px solid var(--cyan)}
+
+.voice-help{margin-top:18px;border:1px solid var(--line);border-radius:8px;padding:11px 13px}.voice-help summary{cursor:pointer;color:var(--purple);font-size:11px}.voice-help p{font-size:10px;line-height:1.8;margin-bottom:0}
+
+.catalog{padding-bottom:36px}
+
+/* Acesso local e identificação do comprador */
+.auth-screen{min-height:100dvh;display:grid;place-items:center;padding:32px 18px;background:radial-gradient(ellipse at 15% 0,#3c286044,transparent 60%),var(--bg)}.auth-card{width:min(440px,100%);padding:32px;background:var(--panel);border:1px solid #493661;border-radius:18px;box-shadow:0 18px 80px #0004}.auth-brand{display:flex;gap:0;margin-bottom:25px;font-size:29px}.auth-card .eyebrow{font-size:8px}.auth-card h1{font-size:30px;letter-spacing:-1px;line-height:1.2;margin:13px 0}.auth-card>p{color:var(--muted);font-size:12px;line-height:1.7}.auth-card form label,.buyer-dialog form label{display:block;color:#d9d3e6;font-size:11px;margin:13px 0 6px}.auth-card form input:not([type=checkbox]),.buyer-dialog input,.buyer-dialog textarea{width:100%;min-width:0;background:#0f101a;border:1px solid #483b59;border-radius:7px;color:var(--text);padding:11px 12px;min-height:42px;font-size:13px}.buyer-dialog textarea{resize:vertical;max-height:150px}.form-fields{border:0;margin:0;padding:0;min-width:0}.auth-card form .show-password{display:flex;align-items:center;gap:8px;margin-top:14px}.show-password input{accent-color:var(--purple)}.form-message{min-height:18px;font-size:11px!important;color:#ffc2ac!important;line-height:1.6!important;margin:13px 0!important}.auth-card .primary{margin-top:5px}.auth-card .fine{margin-bottom:0}.account-display{font-size:10px;color:var(--purple);max-width:115px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.logout-button{padding:5px}.buyer-dialog>p{margin-top:-5px}.buyer-dialog .primary{margin-top:7px}.receipt-buyer{padding:15px;background:#211a2f;border:1px solid #4c3b61;border-radius:9px;overflow-wrap:anywhere}.receipt-buyer h3{margin:0 0 8px!important;color:var(--purple);font-size:12px!important}.receipt-buyer p{margin:3px 0;font-size:11px;line-height:1.7}.high-contrast .receipt-buyer{background:#080808;border-color:#ccc}@media(max-width:760px){.account-display{display:none}.header-row nav{display:none}.header-actions{margin-left:auto}.logout-button{font-size:10px}.auth-card{padding:25px}.buyer-dialog{padding:22px}}
+
+</style>
+</head>
+<body>
+<section id="auth-screen" class="auth-screen" aria-labelledby="auth-title">
+<div class="auth-card"><span class="brand auth-brand">GAME<span class="brand-end">ZONE</span></span><span class="eyebrow muted">SEU PRÓXIMO LEVEL COMEÇA AQUI</span>
+<h1 id="auth-title">Crie seu acesso.</h1><p id="auth-intro">Crie sua conta de demonstração com um usuário e uma senha.</p>
+<form id="auth-form"><fieldset id="registration-fields" class="form-fields"><legend class="sr-only">Dados do cadastro</legend><label for="account-name">Nome completo</label><input id="account-name" type="text" minlength="3" maxlength="100" autocomplete="name" required><label for="account-email">E-mail</label><input id="account-email" type="email" maxlength="120" autocomplete="email" required></fieldset>
+<label for="account-username">Usuário</label><input id="account-username" type="text" minlength="3" maxlength="32" autocomplete="username" required spellcheck="false"><label for="account-password">Senha</label><input id="account-password" type="password" minlength="8" maxlength="128" autocomplete="new-password" required><div id="confirm-password-field"><label for="account-confirm">Confirmar senha</label><input id="account-confirm" type="password" minlength="8" maxlength="128" autocomplete="new-password" required></div>
+<label class="show-password"><input id="show-password" type="checkbox"> Mostrar senha</label><p id="auth-message" class="form-message" role="status" aria-live="polite"></p><button id="auth-submit" class="primary full" type="submit">Criar meu acesso</button></form><button id="auth-toggle" class="secondary full" style="margin-top:12px" type="button">Já tenho conta — Entrar</button>
+<button id="guest-entry" class="secondary full" type="button" style="margin-top:12px" hidden>Entrar como visitante</button><p id="guest-note" class="fine" hidden>Modo demonstração: explore a loja sem cadastro. Nenhum dado pessoal é necessário para entrar.</p><p class="fine" id="auth-storage">Acesso local de demonstração. Nome, e-mail e verificador da senha ficam neste navegador. Não há senha padrão. Ao recarregar, entre novamente.</p><noscript>Ative o JavaScript para entrar no GameZone.</noscript></div></section>
+<div id="storefront" hidden inert>
+<a href="#catalogo" class="skip">Ir para os produtos</a>
+<div class="topline"><div class="shell"><span><i class="dot"></i> SEU SETUP. SUAS REGRAS.</span><span>Projeto acadêmico <b>•</b> Preços fictícios</span></div></div>
+<header>
+  <div class="shell header-row">
+    <a class="brand" href="#inicio" aria-label="GameZone, início"><span class="brand-icon">ϟ</span><span>GAME<span class="brand-end">ZONE</span><small>GEAR UP. GAME ON.</small></span></a>
+    <nav aria-label="Navegação principal"><a href="#catalogo" class="nav-active">Explorar</a><button type="button" id="about-open">O projeto <span>↗</span></button></nav>
+    <div class="header-actions"><span id="account-display" class="account-display"></span><button id="logout" type="button" class="text-button logout-button">Sair</button><button type="button" id="contrast" class="icon-btn" aria-label="Ativar alto contraste" aria-pressed="false" title="Alto contraste">◐</button><button type="button" id="cart-open" class="cart-open"><svg aria-hidden="true" width="17" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 7h14l1 14H4L5 7ZM8 7V5a4 4 0 0 1 8 0v2"/></svg> <span>Carrinho</span><b id="cart-count">0</b></button></div>
+  </div>
+</header>
+<main id="inicio" class="shell">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy"><span class="eyebrow"><i class="dot"></i> O PRÓXIMO LEVEL É SEU</span><h1 id="hero-title">Seu jogo merece<br>um <em>novo nível.</em></h1><p>Encontre o equipamento que acompanha você.<br>Mais precisão, mais imersão. Do seu jeito.</p><a class="primary" href="#catalogo">Explorar equipamentos <span aria-hidden="true">↗</span></a><div class="hero-meta"><span><span aria-hidden="true">✓</span> Catálogo 100% offline</span><span><span aria-hidden="true">◇</span> Experiência demonstrativa</span></div></div>
+    <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="cross cross-one">+</div><div class="cross cross-two">+</div><span class="hero-number">01 / GEAR</span><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjgwIiByb2xlPSJpbWciPjx0aXRsZT5JbHVzdHJhw6fDo28gZGUgaGVhZHNldCBnYW1lcjwvdGl0bGU+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJib2R5IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzUxNTY2NiIvPjxzdG9wIG9mZnNldD0iLjQiIHN0b3AtY29sb3I9IiMyNzJiMzkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMDEyMWUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0icmdiIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iLjYiPjxzdG9wIHN0b3AtY29sb3I9IiM2Y2ViZDciLz48c3RvcCBvZmZzZXQ9Ii40IiBzdG9wLWNvbG9yPSIjOGI3N2Y4Ii8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iI2U1N2VkYiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzVkY2NlZCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJzY3JlZW4iIHgxPSIwIiB5MT0iMSIgeDI9IjEiIHkyPSIwIj48c3RvcCBzdG9wLWNvbG9yPSIjMTY0ZDcwIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzMzMjQ2ZCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2MwNTNiNCIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjdXAiPjxzdG9wIHN0b3AtY29sb3I9IiMzYzQxNTIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMTEzMWQiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4IDApIj48cGF0aCBkPSJNOTYgMTUyVjExM2E5NiA5NiAwIDAgMSAxOTIgMHYzOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExMzFjIiBzdHJva2Utd2lkdGg9IjMwIi8+PHBhdGggZD0iTTk2IDE1MlYxMTNhOTYgOTYgMCAwIDEgMTkyIDB2MzkiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNib2R5KSIgc3Ryb2tlLXdpZHRoPSIyMyIvPjxwYXRoIGQ9Ik0xMDUgOTZhODggODggMCAwIDEgMTc0IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwNzU4YiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTEyMCA3MGE4MSA4MSAwIDAgMSAxNDUgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjAyMzMyIiBzdHJva2Utd2lkdGg9IjEyIi8+PHBhdGggZD0iTTk3IDEyOXY2Mm0xOTEtNjJ2NjIiIHN0cm9rZT0iIzlmYTRiMyIgc3Ryb2tlLXdpZHRoPSI2Ii8+PGcgdHJhbnNmb3JtPSJyb3RhdGUoLTkgMTA0IDE4MykiPjxyZWN0IHg9IjY0IiB5PSIxMzQiIHdpZHRoPSI2NiIgaGVpZ2h0PSIxMDYiIHJ4PSIyNyIgZmlsbD0iIzBkMGYxOSIgc3Ryb2tlPSIjNDg0YzYwIiBzdHJva2Utd2lkdGg9IjMiLz48cmVjdCB4PSI3MiIgeT0iMTQxIiB3aWR0aD0iNDkiIGhlaWdodD0iOTEiIHJ4PSIyMiIgZmlsbD0idXJsKCNjdXApIi8+PHJlY3QgeD0iNzciIHk9IjE0NiIgd2lkdGg9IjM5IiBoZWlnaHQ9IjgxIiByeD0iMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNyZ2IpIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJtOTQgMTc1LTcgMTVoMTBsLTMgMTUgMTUtMjNoLTEwbDMtNyIgZmlsbD0iI2E4OGJmYSIvPjwvZz48ZyB0cmFuc2Zvcm09InJvdGF0ZSg5IDI4MiAxODMpIj48cmVjdCB4PSIyNTQiIHk9IjEzNCIgd2lkdGg9IjY2IiBoZWlnaHQ9IjEwNiIgcng9IjI3IiBmaWxsPSIjMGQwZjE5IiBzdHJva2U9IiM0ODRjNjAiIHN0cm9rZS13aWR0aD0iMyIvPjxyZWN0IHg9IjI2MyIgeT0iMTQyIiB3aWR0aD0iNDkiIGhlaWdodD0iOTAiIHJ4PSIyMiIgZmlsbD0idXJsKCNjdXApIi8+PHJlY3QgeD0iMjY5IiB5PSIxNDgiIHdpZHRoPSIzNiIgaGVpZ2h0PSI3OCIgcng9IjE3IiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjcmdiKSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0ibTI4NCAxNzYtNyAxNWgxMGwtMyAxNSAxNS0yM2gtMTBsMy03IiBmaWxsPSIjYTg4YmZhIi8+PC9nPjxwYXRoIGQ9Ik04NSAyMjVxLTE0IDI4IDI0IDMyaDQ0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMDM2NGIiIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHJlY3QgeD0iMTQ1IiB5PSIyNTAiIHdpZHRoPSIyOCIgaGVpZ2h0PSIxMyIgcng9IjYiIGZpbGw9IiM2NTY3N2QiLz48L2c+PC9zdmc+" alt="" class="hero-headset"><span class="art-label"><i class="dot"></i> IMERSÃO EM CADA PARTIDA</span><div class="floating-spec"><span>ÁUDIO</span><strong>7.1</strong><small>VIRTUAL SURROUND</small></div></div>
+  </section>
+  <div class="benefits" aria-label="Recursos da loja"><div><span class="benefit-icon" aria-hidden="true">⌘</span><span><strong>Feito para o seu setup</strong><small>6 categorias para explorar</small></span></div><div><span class="benefit-icon" aria-hidden="true">◎</span><span><strong>Busque do seu jeito</strong><small>Por texto ou comandos de voz*</small></span></div><div><span class="benefit-icon" aria-hidden="true">↧</span><span><strong>Continue sua partida</strong><small>Carrinho salvo neste navegador</small></span></div></div>
+  <section id="catalogo" class="catalog" aria-labelledby="catalog-title">
+    <div class="section-heading"><div><span class="eyebrow muted">ESCOLHA SEU EQUIPAMENTO</span><h2 id="catalog-title">O upgrade começa aqui<span>.</span></h2></div><span class="local-chip"><i class="dot"></i> Catálogo local</span></div>
+    <form id="search-form" class="search-row" role="search"><div class="search-box"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">Pesquisar produtos</label><input id="search" type="search" maxlength="120" placeholder="O que falta no seu setup?" autocomplete="off"><button id="clear-search" type="button" aria-label="Limpar pesquisa" title="Limpar pesquisa" hidden>×</button><button class="search-submit" type="submit">Buscar</button></div><button id="voice-open" class="voice-btn" type="button" aria-haspopup="dialog" aria-controls="voice-dialog"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></svg> Buscar por voz</button></form>
+    <p id="voice-hint" class="voice-hint">Voz em português: clique no microfone para começar.</p>
+    <div class="filter-bar"><div id="categories" class="categories" role="group" aria-label="Filtrar por categoria"></div><div class="sort-wrap"><label class="sr-only" for="sort">Ordenar produtos</label><select id="sort"><option value="destaque">Em destaque</option><option value="menor">Menor preço</option><option value="maior">Maior preço</option><option value="nome">Nome A–Z</option></select></div></div>
+    <div class="results-row"><span id="result-count" role="status" aria-live="polite"></span><label class="availability-toggle"><input id="available" type="checkbox"> Somente disponíveis</label></div>
+    <div id="products" class="products"></div>
+    <div id="empty" class="empty" hidden><span aria-hidden="true">⌕</span><h3>Nenhum equipamento por aqui</h3><p>Tente outro termo ou explore todas as categorias.</p><button class="secondary" id="reset-filters" type="button">Limpar todos os filtros</button></div>
+  </section>
+</main>
+<footer class="shell"><div class="footer-row"><span class="brand footer-brand">GAME<span class="brand-end">ZONE</span></span><span>Seu próximo nível começa aqui.</span><button id="guide-open" type="button" class="text-button">Como usar ↗</button></div><p>Protótipo acadêmico • FAMETRO · ADS · Grupo 1 · 2026</p><p>Produtos, especificações e preços ilustrativos. Compras simuladas, sem cobrança. *A voz depende do navegador, da permissão do microfone e pode precisar de internet.</p></footer>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title"><div class="dialog-header"><div><span class="eyebrow muted">SEU PRÓXIMO SETUP</span><h2 id="cart-title">Meu carrinho <span id="cart-items-label"></span></h2></div><button type="button" class="icon-btn" data-close aria-label="Fechar carrinho">×</button></div><div id="cart-lines"></div><div class="cart-summary"><div><span>Total da simulação</span><strong id="cart-total">R$ 0,00</strong></div><p>Sem frete ou pagamento. Esta é uma demonstração.</p><button id="checkout" type="button" class="primary full">Concluir simulação <span aria-hidden="true">→</span></button><button id="clear-cart" type="button" class="text-button full">Esvaziar carrinho</button></div></dialog>
+<dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><div class="dialog-header"><span class="eyebrow muted">CONHEÇA O EQUIPAMENTO</span><button type="button" class="icon-btn" data-close aria-label="Fechar detalhes">×</button></div><div id="detail-content"></div></dialog>
+<dialog id="voice-dialog" class="voice-dialog" aria-labelledby="voice-title" aria-describedby="voice-intro">
+<div class="dialog-header"><div><span class="eyebrow muted">BUSCA POR VOZ · PT-BR</span><h2 id="voice-title">Fale. Encontre. Jogue.</h2></div><button class="icon-btn" type="button" data-close aria-label="Fechar busca por voz">×</button></div>
+<p id="voice-intro">Ative o microfone, aguarde “Ouvindo” e diga o produto. Você também pode tocar em “Concluir fala”. A pesquisa é aplicada ao receber o texto reconhecido. Se o serviço não finalizar, a espera é encerrada e o texto parcial é aproveitado quando existir.</p>
+<label for="voice-mode" class="voice-mode-label">Como reconhecer sua voz</label><select id="voice-mode"><option value="browser">Serviço do navegador (pode usar internet)</option><option value="auto">Automático — priorizar voz local</option><option value="local">Somente no dispositivo (se disponível)</option></select>
+<div class="voice-orb" aria-hidden="true"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></svg></div>
+<p id="voice-engine" class="voice-engine">Microfone desligado</p><p id="voice-status" class="voice-status" role="status" aria-live="polite">Pronto para ouvir.</p>
+<div class="transcript-box"><span id="transcript-label">O QUE ESTOU OUVINDO</span><p id="voice-transcript">Sua fala aparecerá aqui.</p></div>
+<div class="voice-controls"><button id="voice-start" class="primary full" type="button" autofocus>Ativar microfone</button><button id="voice-cancel" class="secondary" type="button" hidden>Cancelar</button></div>
+<button id="voice-use-partial" class="secondary full" type="button" hidden>Usar texto já reconhecido</button>
+<button id="voice-results" class="primary full" type="button" hidden>Ver resultados</button>
+<details class="voice-help"><summary>Ficou em “processando” ou não ouviu sua voz?</summary><p>Baixe este HTML e abra em um navegador, fora da prévia do ChatGPT ou do gerenciador de arquivos. No modo Serviço do navegador, mantenha a internet conectada e permita o microfone nas configurações do navegador e do sistema. Aguarde o aviso de escuta antes de falar. Se o acesso ao arquivo local for bloqueado, use a versão do projeto em localhost. A escuta termina após uma pausa de aproximadamente 3 segundos quando há texto parcial. Após 12 segundos sem resposta final, o site recupera o texto parcial ou encerra com uma mensagem.</p></details>
+<details class="voice-help" id="mic-diagnostics"><summary>Testar microfone e diagnosticar áudio</summary><p>Este teste mede o som recebido durante 5 segundos, sem gravar nem enviar áudio. Ele verifica a captação, não a transcrição.</p><button id="mic-test" class="secondary full" type="button">Testar microfone</button><label for="mic-level">Nível de som</label><meter id="mic-level" min="0" max="100" value="0" style="width:100%;height:20px"></meter><p id="mic-test-status" role="status" aria-live="polite">Teste ainda não iniciado.</p><p id="mic-environment" class="fine"></p></details><div id="voice-examples" class="voice-examples"><span>Exemplos de comandos</span><div><span>“Buscar teclado gamer”</span><span>“Mostrar headsets”</span><span>“Limpar pesquisa”</span></div></div>
+<p class="fine">No modo automático, a voz local é usada quando o navegador confirma suporte e o pacote pt-BR já está instalado. Caso contrário, o serviço do navegador pode enviar áudio para processamento e precisar de internet. O GameZone não grava áudios nem salva transcrições no backup. Nenhum pacote de idioma é baixado pelo site.</p>
+<button id="voice-dictation" class="secondary full" type="button">Usar ditado do teclado</button><p class="fine">Alternativa para celular: toque no microfone do teclado e fale o produto. No Windows, use Win + H.</p>
+<button id="voice-text" class="text-button full" type="button">Prefiro digitar</button></dialog>
+<dialog id="buyer-dialog" class="buyer-dialog" aria-labelledby="buyer-title"><div class="dialog-header"><div><span class="eyebrow muted">ÚLTIMA ETAPA</span><h2 id="buyer-title">Dados do comprador</h2></div><button type="button" class="icon-btn" data-close aria-label="Voltar ao carrinho">×</button></div><p>Confira quem aparecerá no comprovante. Você pode ajustar os dados para esta simulação.</p>
+<form id="buyer-form"><label for="buyer-name">Nome completo *</label><input id="buyer-name" type="text" minlength="3" maxlength="100" autocomplete="name" required><label for="buyer-email">E-mail *</label><input id="buyer-email" type="email" maxlength="120" autocomplete="email" required><label for="buyer-phone">Telefone (opcional)</label><input id="buyer-phone" type="tel" maxlength="25" autocomplete="tel"><label for="buyer-address">Endereço (opcional)</label><textarea id="buyer-address" maxlength="250" rows="3" autocomplete="street-address"></textarea><p class="fine">Os dados desta compra ficam na sessão e no PDF que você baixar. Não são enviados a um servidor nem salvos com o carrinho.</p><p id="buyer-message" class="form-message" role="status" aria-live="polite"></p><button class="primary full" type="submit">Finalizar e preparar comprovante</button><button class="text-button full" data-close type="button">Voltar ao carrinho</button></form></dialog>
+<dialog id="checkout-dialog" aria-labelledby="checkout-title"><div class="dialog-header"><span class="eyebrow muted">MISSÃO CONCLUÍDA</span><button type="button" data-close class="icon-btn" aria-label="Fechar resumo da simulação">×</button></div><div class="success-mark" aria-hidden="true">✓</div><h2 id="checkout-title">Seu setup está escolhido.</h2><p>A simulação foi concluída. Nenhuma compra foi realizada.</p><div id="receipt-buyer" class="receipt-buyer"></div><div id="receipt-summary"></div><button id="download-receipt" class="primary full" type="button">↓ Baixar comprovante PDF</button><button id="continue-shopping" class="text-button full" type="button">Continuar explorando</button></dialog>
+<dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-header"><h2 id="about-title">Por trás do GameZone</h2><button data-close type="button" class="icon-btn" aria-label="Fechar informações do projeto">×</button></div><p>Um protótipo acadêmico de loja gamer desenvolvido a partir da proposta do Grupo 1, do curso de Análise e Desenvolvimento de Sistemas da FAMETRO.</p><h3>Tecnologia com propósito</h3><p>HTML, CSS e JavaScript conectam um catálogo JSON à pesquisa por texto, filtros, voz e carrinho demonstrativo. Os produtos também têm representação semântica em JSON-LD (Product e Offer).</p><h3>Equipe da proposta</h3><ul><li>Ana Paula Vieira Lopes</li><li>Gracieide Guimarães Barbosa</li><li>Janff Henrique Guedes de Souza</li><li>Luiz Eduardo Custódio Duarte</li></ul><p class="fine">Ilustrações e especificações demonstrativas. O cadastro fica no servidor Java quando usado em localhost ou no navegador no HTML offline. Os dados da compra ficam no navegador. Não há pagamentos nem conexão com estoque real.</p></dialog>
+<dialog id="guide-dialog" aria-labelledby="guide-title"><div class="dialog-header"><h2 id="guide-title">Sua primeira partida</h2><button data-close type="button" class="icon-btn" aria-label="Fechar instruções">×</button></div><ol class="guide"><li><strong>Entre.</strong> Crie seu usuário e senha no primeiro acesso. Nos próximos acessos, entre com suas credenciais; a versão offline usa o mesmo navegador.</li><li><strong>Explore.</strong> Digite um produto, selecione a categoria ou ordene por preço. Os mesmos comandos de voz também podem ser digitados.</li><li><strong>Monte seu setup.</strong> Adicione itens ao carrinho, ajuste a quantidade e preencha os dados do comprador para concluir uma simulação sem cobrança.</li><li><strong>Continue depois.</strong> O carrinho é salvo neste navegador quando o armazenamento local está disponível.</li></ol><h3>Funciona sem internet</h3><p>No HTML portátil, catálogo, ilustrações, pesquisa digitada, filtros e carrinho funcionam sem servidor. O recurso de voz é opcional e depende do navegador.</p><p class="fine">O salvamento automático depende das permissões do navegador. Mover o HTML, usar outro navegador ou limpar os dados pode remover o estado local. Ao limpar os dados do navegador, seu carrinho poderá ser perdido.</p></dialog>
+<script id="catalog-data" type="application/json">[
+  {
+    "id": "teclado-rgb",
+    "nome": "Teclado Mecânico RGB",
+    "categoria": "Teclados",
+    "descricao": "Precisão em cada comando. Iluminação RGB e switches mecânicos para acompanhar o seu ritmo.",
+    "preco": 199.9,
+    "imagem": "assets/img/teclado.svg",
+    "disponivel": true,
+    "selo": "ESCOLHA DO PLAYER",
+    "especificacoes": [
+      "Switch mecânico",
+      "Iluminação RGB",
+      "Conexão USB"
+    ]
+  },
+  {
+    "id": "teclado-compacto",
+    "nome": "Teclado Gamer Compacto",
+    "categoria": "Teclados",
+    "descricao": "Mais espaço para suas jogadas. Layout compacto com as teclas essenciais sempre por perto.",
+    "preco": 149.9,
+    "imagem": "assets/img/teclado.svg",
+    "disponivel": true,
+    "selo": "SETUP ESSENCIAL",
+    "especificacoes": [
+      "Layout compacto",
+      "Iluminação LED",
+      "Conexão USB"
+    ]
+  },
+  {
+    "id": "mouse-rgb",
+    "nome": "Mouse Gamer RGB",
+    "categoria": "Mouses",
+    "descricao": "Movimentos rápidos, mira precisa. Um mouse leve com iluminação para combinar com o setup.",
+    "preco": 89.9,
+    "imagem": "assets/img/mouse.svg",
+    "disponivel": true,
+    "selo": "PRECISÃO EM JOGO",
+    "especificacoes": [
+      "Sensor óptico",
+      "DPI ajustável",
+      "Iluminação RGB"
+    ]
+  },
+  {
+    "id": "mouse-sem-fio",
+    "nome": "Mouse Gamer Sem Fio",
+    "categoria": "Mouses",
+    "descricao": "Liberdade para se movimentar. Formato ergonômico e conexão sem fio para sua próxima partida.",
+    "preco": 129.9,
+    "imagem": "assets/img/mouse.svg",
+    "disponivel": true,
+    "selo": "SEM LIMITES",
+    "especificacoes": [
+      "Conexão sem fio",
+      "Design ergonômico",
+      "Receptor USB"
+    ]
+  },
+  {
+    "id": "headset-71",
+    "nome": "Headset Gamer 7.1",
+    "categoria": "Headsets",
+    "descricao": "Entre no universo da partida. Áudio virtual 7.1, microfone e conforto para longas sessões.",
+    "preco": 179.9,
+    "imagem": "assets/img/headset.svg",
+    "disponivel": true,
+    "selo": "OUÇA CADA DETALHE",
+    "especificacoes": [
+      "Áudio virtual 7.1",
+      "Microfone integrado",
+      "Conexão USB"
+    ]
+  },
+  {
+    "id": "headset-bt",
+    "nome": "Headset Gamer Bluetooth",
+    "categoria": "Headsets",
+    "descricao": "Seu som, sem cabos. Headset Bluetooth com controles integrados para jogar e ouvir música.",
+    "preco": 229.9,
+    "imagem": "assets/img/headset.svg",
+    "disponivel": false,
+    "selo": "EM BREVE DE VOLTA",
+    "especificacoes": [
+      "Bluetooth",
+      "Controles integrados",
+      "Microfone integrado"
+    ]
+  },
+  {
+    "id": "monitor-24",
+    "nome": "Monitor Gamer 24 polegadas",
+    "categoria": "Monitores",
+    "descricao": "Uma nova perspectiva para o seu jogo. Tela de 24 polegadas para estudar, criar e competir.",
+    "preco": 899.9,
+    "imagem": "assets/img/monitor.svg",
+    "disponivel": true,
+    "selo": "AMPLIE SEU UNIVERSO",
+    "especificacoes": [
+      "Tela de 24 polegadas",
+      "Painel Full HD",
+      "Conexão HDMI"
+    ]
+  },
+  {
+    "id": "monitor-27",
+    "nome": "Monitor Gamer 27 polegadas",
+    "categoria": "Monitores",
+    "descricao": "Mais tela, mais imersão. Explore cada cenário com uma área de visualização de 27 polegadas.",
+    "preco": 1299.9,
+    "imagem": "assets/img/monitor.svg",
+    "disponivel": true,
+    "selo": "IMERSÃO TOTAL",
+    "especificacoes": [
+      "Tela de 27 polegadas",
+      "Painel Full HD",
+      "Conexão HDMI"
+    ]
+  },
+  {
+    "id": "controle-usb",
+    "nome": "Controle Gamer USB",
+    "categoria": "Controles",
+    "descricao": "Assuma o controle da próxima aventura. Pegada confortável e conexão USB para começar a jogar.",
+    "preco": 119.9,
+    "imagem": "assets/img/controle.svg",
+    "disponivel": true,
+    "selo": "PRONTO PARA A AVENTURA",
+    "especificacoes": [
+      "Conexão USB",
+      "Dois analógicos",
+      "Design ergonômico"
+    ]
+  },
+  {
+    "id": "mousepad-rgb",
+    "nome": "Mousepad Gamer RGB",
+    "categoria": "Acessórios",
+    "descricao": "A base de uma boa jogada. Superfície ampla, apoio antiderrapante e bordas com iluminação RGB.",
+    "preco": 79.9,
+    "imagem": "assets/img/mousepad.svg",
+    "disponivel": true,
+    "selo": "COMPLETE SEU SETUP",
+    "especificacoes": [
+      "Superfície de tecido",
+      "Base antiderrapante",
+      "Bordas RGB"
+    ]
+  }
+]</script>
+<script id="product-jsonld" type="application/ld+json">{}</script>
+<script>
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.GZ = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  const categories = ['Teclados', 'Mouses', 'Headsets', 'Monitores', 'Controles', 'Acessórios'];
+  const images = ['teclado', 'mouse', 'headset', 'monitor', 'controle', 'mousepad'].map(x => 'assets/img/' + x + '.svg');
+  const norm = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  const text = (s, max) => typeof s === 'string' && s.trim().length > 0 && s.length <= max;
+  function validateCatalog(raw) {
+    if (!Array.isArray(raw) || !raw.length || raw.length > 200) throw new Error('O catálogo deve ter entre 1 e 200 produtos.');
+    const ids = new Set(); let rejected = 0;
+    const products = raw.flatMap(p => {
+      if (!p || typeof p !== 'object' || typeof p.id !== 'string' || !/^[a-zA-Z0-9_-]{1,40}$/.test(p.id) || ids.has(p.id) ||
+          !text(p.nome, 100) || !categories.includes(p.categoria) || !text(p.descricao, 500) ||
+          typeof p.preco !== 'number' || !Number.isFinite(p.preco) || p.preco < 0 || p.preco > 1000000 ||
+          Math.abs(p.preco * 100 - Math.round(p.preco * 100)) > 0.00001 || !images.includes(p.imagem) || typeof p.disponivel !== 'boolean') {
+        rejected++; return [];
+      }
+      ids.add(p.id);
+      return [{id:p.id, nome:p.nome.trim(), categoria:p.categoria, descricao:p.descricao.trim(), preco:p.preco,
+        imagem:p.imagem, disponivel:p.disponivel, selo:text(p.selo, 50) ? p.selo : 'GAMEZONE',
+        especificacoes:Array.isArray(p.especificacoes) ? p.especificacoes.filter(x => text(x, 100)).slice(0, 8) : []}];
+    });
+    if (!products.length) throw new Error('Nenhum produto válido. Confira os campos e os caminhos das imagens.');
+    return {products, rejected};
+  }
+  function parseQuery(input) {
+    let q = norm(input).replace(/[.,!?;:]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (/^(limpar( (a )?(pesquisa|busca))?|mostrar (todos|todas)( (os )?produtos)?|todos os produtos|ver tudo)$/.test(q)) return '';
+    return q.replace(/^(buscar|busque|pesquisar|pesquise|mostrar|mostre|procurar|procure)\s+/, '').replace(/^(por|os|as|um|uma)\s+/, '');
+  }
+  function filterProducts(products, query = '', category = '', available = false, sort = 'destaque') {
+    const aliases = {teclado:'teclado',teclados:'teclado',mouse:'mouse',mouses:'mouse',headsets:'headset',headset:'headset',monitor:'monitor',monitores:'monitor',controle:'controle',controles:'controle',acessorio:'acessorio',acessorios:'acessorio'};
+    const tokens = parseQuery(query).split(/\s+/).filter(x => x && x !== 'gamer').map(x => Object.hasOwn(aliases, x) ? aliases[x] : x);
+    const result = products.filter(p => (!category || p.categoria === category) && (!available || p.disponivel) && tokens.every(t => norm(p.nome + ' ' + p.categoria).includes(t)));
+    if (sort === 'menor') result.sort((a,b) => a.preco - b.preco);
+    if (sort === 'maior') result.sort((a,b) => b.preco - a.preco);
+    if (sort === 'nome') result.sort((a,b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+    return result;
+  }
+  const cents = p => Math.round(p.preco * 100);
+  function cleanCart(raw, products) {
+    if (!Array.isArray(raw)) return [];
+    const seen = new Set();
+    return raw.slice(0,200).flatMap(i => {
+      if (!i || seen.has(i.id) || !products.some(p => p.id === i.id && p.disponivel) || !Number.isInteger(i.quantidade) || i.quantidade < 1 || i.quantidade > 99) return [];
+      seen.add(i.id); return [{id:i.id, quantidade:i.quantidade}];
+    });
+  }
+  function total(cart, products) { return cleanCart(cart, products).reduce((sum, i) => sum + cents(products.find(p => p.id === i.id)) * i.quantidade, 0); }
+  return {categories, images, norm, parseQuery, validateCatalog, filterProducts, cents, cleanCart, total};
+});
+
+</script>
+<script>
+/* Controlador de voz: o construtor não solicita microfone nem consulta serviços. */
+(function(root, factory) {
+  const api=factory();
+  if(typeof module==='object' && module.exports) module.exports=api;
+  else root.GZVoice=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const errors={
+    'not-allowed':'Microfone bloqueado. Permita o acesso nas configurações do navegador. Se o arquivo local for bloqueado, use a busca digitada ou execute o projeto em localhost.',
+    'service-not-allowed':'O serviço de voz não está autorizado neste navegador. Use a busca digitada.',
+    'audio-capture':'Microfone não encontrado ou em uso por outro aplicativo. Verifique o dispositivo e tente novamente.',
+    'no-speech':'Não ouvimos sua fala. Tente novamente e fale após a indicação “Ouvindo”.',
+    'network':'Não foi possível acessar o serviço de voz. Confira a conexão ou use a busca digitada.',
+    'language-not-supported':'O reconhecimento em português não está disponível neste modo. Escolha outro modo ou digite.',
+    'aborted':'Escuta cancelada. Você pode tentar novamente.'
+  };
+  class Controller {
+    constructor(options={}) {
+      this.Speech=options.Speech;
+      this.isOnline=options.isOnline||(()=>true);
+      this.onState=options.onState||(()=>{});
+      this.onResult=options.onResult||(()=>{});
+      this.setTimer=options.setTimer||setTimeout;
+      this.clearTimer=options.clearTimer||clearTimeout;
+      this.timeout=options.timeout||35000;
+      this.silenceDelay=options.silenceDelay||3000;
+      this.processingTimeout=options.processingTimeout||12000;
+      this.session=null;this.timer=null;this.processingTimer=null;this.silenceTimer=null;this.generation=0;this.active=false;
+      this.state={phase:'idle',message:'Pronto para ouvir.',transcript:'',engine:''};
+    }
+    emit(phase,message,extra={}) {this.state={...this.state,phase,message,...extra};this.onState({...this.state});}
+    release() {
+      if(this.timer!==null){this.clearTimer(this.timer);this.timer=null;}
+      if(this.processingTimer!==null){this.clearTimer(this.processingTimer);this.processingTimer=null;}
+      this.clearSilence();
+      const session=this.session;this.session=null;this.active=false;this.generation++;
+      if(session){for(const e of ['start','audiostart','soundstart','speechend','result','error','end','nomatch'])session['on'+e]=null;try{session.abort();}catch{}}
+    }
+    finish(phase,message,extra={}) {this.release();this.emit(phase,message,extra);}
+    cancel(silent=false) {
+      this.release();
+      if(silent)this.state={phase:'idle',message:'Pronto para ouvir.',transcript:'',engine:''};
+      else this.emit('cancelled','Escuta cancelada. O microfone foi desligado.',{transcript:''});
+    }
+    usePartialOrFail(message) {
+      const transcript=this.state.transcript.trim();
+      if(transcript){
+        this.finish('done','O serviço não confirmou o resultado final. Usamos o texto parcial; confira sua pesquisa.',{transcript,partial:true});
+        this.onResult(transcript,{partial:true});
+      }else this.finish('error',message);
+    }
+    clearSilence() {
+      if(this.silenceTimer!==null){this.clearTimer(this.silenceTimer);this.silenceTimer=null;}
+    }
+    scheduleSilence() {
+      this.clearSilence();
+      const token=this.generation;
+      this.silenceTimer=this.setTimer(()=>{
+        this.silenceTimer=null;
+        if(this.generation===token && this.active && this.state.phase==='listening')this.stop();
+      },this.silenceDelay);
+    }
+    awaitFinal() {
+      this.clearSilence();
+      if(this.processingTimer!==null)return;
+      const token=this.generation;
+      this.emit('processing','Finalizando sua fala… aguardando até 12 segundos.');
+      this.processingTimer=this.setTimer(()=>{
+        if(this.generation===token)this.usePartialOrFail('O serviço de voz não devolveu texto. Confira a conexão e as permissões do microfone. Tente novamente ou digite.');
+      },this.processingTimeout);
+    }
+    stop() {
+      if(!this.active)return;
+      if(this.state.phase==='checking' || this.state.phase==='starting'){this.cancel();return;}
+      if(this.state.phase==='processing')return;
+      this.awaitFinal();
+      try{this.session.stop();}catch{this.usePartialOrFail('Não foi possível concluir a escuta. Tente novamente.');}
+    }
+    async start(mode='auto') {
+      if(this.active)return false;
+      if(!this.Speech){this.emit('unsupported','Este navegador não oferece reconhecimento de voz. Use a busca digitada.');return false;}
+      this.active=true;const token=++this.generation;
+      this.emit('checking','Verificando o reconhecimento em português…',{transcript:'',engine:'',partial:false,errorCode:''});
+      this.timer=this.setTimer(()=>{if(this.generation===token)this.usePartialOrFail('Tempo de escuta encerrado sem receber texto. Confira o microfone e tente novamente.');},this.timeout);
+      try{
+        const session=new this.Speech();this.session=session;
+        const supportsLocal='processLocally' in session && typeof this.Speech.available==='function';
+        let local=false;
+        if(mode!=='browser' && supportsLocal){
+          try{local=await this.Speech.available({langs:['pt-BR'],processLocally:true})==='available';}
+          catch{local=false;}
+        }
+        if(token!==this.generation)return false;
+        if(mode==='local' && !local){this.finish('error','Voz local indisponível. O navegador precisa oferecer reconhecimento no dispositivo e já ter o pacote de português instalado. Nada foi baixado.');return false;}
+        if(!local && !this.isOnline()){this.finish('error','Sem conexão e sem reconhecimento local disponível. A busca digitada continua funcionando offline.');return false;}
+        if('processLocally' in session)session.processLocally=local;
+        session.lang='pt-BR';session.continuous=false;session.interimResults=true;session.maxAlternatives=1;
+        const valid=()=>this.generation===token && this.session===session;
+        session.onstart=()=>{if(valid()&&this.state.phase!=='processing')this.emit('listening','Ouvindo… diga o produto ou comando.');};
+        session.onaudiostart=()=>{if(valid()&&this.state.phase!=='processing')this.emit('listening','Microfone recebendo áudio. Diga o produto ou comando.');};
+        session.onsoundstart=()=>{if(valid()&&this.state.phase!=='processing')this.emit('listening','Som detectado. Continue falando…');};
+        // Aguarda o resultado natural; stop() prematuro pode cortar a fala em alguns motores.
+        session.onspeechend=()=>{if(valid())this.awaitFinal();};
+        session.onresult=e=>{
+          if(!valid())return;
+          let final='',interim='';
+          for(let i=0;i<e.results.length;i++){
+            const result=e.results[i],phrase=result[0]?.transcript;
+            if(typeof phrase!=='string')continue;
+            if(result.isFinal)final+=' '+phrase;else interim+=' '+phrase;
+          }
+          final=final.trim().slice(0,120);interim=interim.trim().slice(0,120);
+          if(final){this.finish('done','Comando reconhecido. Pesquisa atualizada.',{transcript:final,partial:false});this.onResult(final,{partial:false});}
+          else if(interim){
+            this.emit(this.state.phase==='processing'?'processing':'listening',this.state.phase==='processing'?'Concluindo o reconhecimento…':'Ouvindo…',{transcript:interim});
+            if(this.state.phase==='listening')this.scheduleSilence();
+          }
+        };
+        session.onnomatch=()=>{if(valid())this.usePartialOrFail('Não foi possível identificar um comando. Tente novamente ou use o ditado do teclado.');};
+        session.onerror=e=>{if(valid()){
+          const message=errors[e.error]||'Não foi possível reconhecer sua fala. Tente novamente ou use o ditado do teclado.';
+          if(['network','no-speech','aborted'].includes(e.error)){this.state.errorCode=e.error;this.usePartialOrFail(message);}
+          else this.finish('error',message,{errorCode:e.error});
+        }};
+        session.onend=()=>{
+          if(!valid())return;
+          // Alguns navegadores encerram a sessão antes de entregar o resultado final.
+          // Se já estamos aguardando a transcrição, preserve o prazo de processamento.
+          if(this.state.phase==='processing')return;
+          this.usePartialOrFail('A escuta terminou sem receber texto. Confira as permissões do microfone ou tente o serviço do navegador com internet.');
+        };
+        this.emit('starting','Aguardando o microfone… autorize o acesso se solicitado.',{engine:local?'local':'browser'});
+        session.start();return true;
+      }catch{
+        if(token===this.generation)this.finish('error','O microfone não pôde ser iniciado. Confira as permissões do navegador ou use a busca digitada.');
+        return false;
+      }
+    }
+  }
+  return {Controller};
+});
+
+</script>
+<script>
+/* Acesso local para o HTML portátil; acesso HTTP via servidor Java. */
+(function(root,factory){
+  const api=factory();
+  if(typeof module==='object'&&module.exports)module.exports=api;
+  else root.GZAccount=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const KEY='gamezone.account.v1',ITERATIONS=600000;
+  const clean=s=>typeof s==='string'?s.replace(/\s+/g,' ').trim():'';
+  function validateBuyer(raw){
+    const buyer={nome:clean(raw?.nome),email:clean(raw?.email),telefone:clean(raw?.telefone),endereco:clean(raw?.endereco)};
+    if(buyer.nome.length<3||buyer.nome.length>100)throw Error('Informe o nome do comprador, com 3 a 100 caracteres.');
+    if(buyer.email.length>120||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(buyer.email))throw Error('Informe um e-mail válido.');
+    if(buyer.telefone && (buyer.telefone.length>25||!/^[+\d() .-]+$/.test(buyer.telefone)||buyer.telefone.replace(/\D/g,'').length<8))throw Error('Confira o telefone ou deixe o campo vazio.');
+    if(buyer.endereco.length>250)throw Error('O endereço deve ter até 250 caracteres.');
+    return buyer;
+  }
+  const username=s=>clean(s).toLowerCase();
+  const hex=bytes=>Array.from(bytes,x=>x.toString(16).padStart(2,'0')).join('');
+  const unhex=s=>Uint8Array.from(s.match(/../g),x=>parseInt(x,16));
+  class LocalAccount {
+    constructor({crypto=globalThis.crypto,storage=()=>globalThis.localStorage}={}){
+      this.crypto=crypto;this.storage=storage;this.memory=null;this._session=null;this.persistent=true;this.busy=false;
+    }
+    get session(){return this._session?{...this._session}:null;}
+    readAll(){
+      if(!this.persistent && this.memory)return this.memory;
+      let raw;
+      try{raw=this.storage().getItem(KEY);}catch{this.persistent=false;return this.memory||[];}
+      if(!raw)return this.memory||[];
+      let parsed;try{parsed=JSON.parse(raw);}catch{throw Error('O cadastro local está corrompido. Consulte as instruções do projeto.');}
+      // Compatível com o formato antigo (uma única conta).
+      const records=Array.isArray(parsed)?parsed:[parsed];
+      const seen=new Set();
+      for(const r of records){
+        if(!r||r.version!==1||r.algorithm!=='PBKDF2-SHA256'||r.iterations!==ITERATIONS||!/^[a-f0-9]{32}$/.test(r.salt)||!/^[a-f0-9]{64}$/.test(r.hash)||typeof r.username!=='string'||!/^[a-z0-9._-]{3,32}$/.test(r.username)||seen.has(r.username))throw Error('O cadastro local não é compatível com esta versão.');
+        validateBuyer({nome:r.nome,email:r.email});seen.add(r.username);
+      }
+      return records;
+    }
+    read(user){const records=this.readAll();return user===undefined?(records[0]||null):(records.find(r=>r.username===username(user))||null);}
+    hasAccount(){return this.readAll().length>0;}
+    async derive(password,salt){
+      if(!this.crypto?.subtle||!this.crypto?.getRandomValues)throw Error('A criptografia do navegador está indisponível. Abra em um navegador compatível ou use o iniciador em localhost.');
+      const key=await this.crypto.subtle.importKey('raw',new TextEncoder().encode(password),'PBKDF2',false,['deriveBits']);
+      return hex(new Uint8Array(await this.crypto.subtle.deriveBits({name:'PBKDF2',hash:'SHA-256',salt,iterations:ITERATIONS},key,256)));
+    }
+    async register(input){
+      if(this.busy)throw Error('Aguarde a operação atual.');this.busy=true;
+      try{
+        const user=username(input.username),password=input.password;
+        if(!/^[a-z0-9._-]{3,32}$/.test(user))throw Error('Use de 3 a 32 caracteres no usuário: letras, números, ponto, hífen ou sublinhado.');
+        if(typeof password!=='string'||password.length<8||password.length>128)throw Error('Use uma senha com 8 a 128 caracteres.');
+        if(password!==input.confirm)throw Error('As senhas não coincidem.');
+        if(this.read(user))throw Error('Já existe um cadastro com este usuário. Escolha outro ou entre na sua conta.');
+        const profile=validateBuyer({nome:input.nome,email:input.email});
+        if(!this.crypto?.getRandomValues)throw Error('Criptografia indisponível. Use o iniciador local do projeto.');
+        const salt=this.crypto.getRandomValues(new Uint8Array(16));
+        const record={version:1,username:user,nome:profile.nome,email:profile.email,algorithm:'PBKDF2-SHA256',iterations:ITERATIONS,salt:hex(salt),hash:await this.derive(password,salt)};
+        const records=this.readAll();
+        if(records.some(r=>r.username===user))throw Error('Já existe um cadastro com este usuário.');
+        const updated=[...records,record];
+        try{this.storage().setItem(KEY,JSON.stringify(updated.length===1?record:updated));this.persistent=true;}catch{this.persistent=false;}
+        this.memory=updated;this._session={username:user,nome:profile.nome,email:profile.email};
+        return this.session;
+      }finally{this.busy=false;}
+    }
+    async login(input){
+      if(this.busy)throw Error('Aguarde a operação atual.');this.busy=true;
+      try{
+        this._session=null;
+        const record=this.read(input.username);
+        if(!record||username(input.username)!==record.username||typeof input.password!=='string'||input.password.length>128)throw Error('Usuário ou senha incorretos.');
+        const result=await this.derive(input.password,unhex(record.salt));
+        let difference=0;for(let i=0;i<result.length;i++)difference|=result.charCodeAt(i)^record.hash.charCodeAt(i);
+        if(difference)throw Error('Usuário ou senha incorretos.');
+        this._session={username:record.username,nome:record.nome,email:record.email};return this.session;
+      }finally{this.busy=false;}
+    }
+    logout(){this._session=null;}
+  }
+  class HttpAccount {
+    constructor(){this._session=null;this.persistent=true;this.server=true;}
+    get session(){return this._session?{...this._session}:null;}
+    async hasAccount(){
+      const response=await fetch('/api/status',{cache:'no-store'});
+      if(!response.ok)throw Error('Não foi possível consultar o servidor Java.');
+      return (await response.json()).hasAccount===true;
+    }
+    async restore(){
+      try{const r=await fetch('/api/sessao',{credentials:'same-origin',cache:'no-store'});if(r.ok)this._session=await r.json();}
+      catch{ /* Um servidor indisponível mantém a tela de login. */ }
+      return this.session;
+    }
+    async request(path,input){
+      let response;
+      try{response=await fetch(path,{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify(input||{})});}
+      catch{throw Error('Servidor indisponível. Verifique se o Java está em execução.');}
+      let body;try{body=await response.json();}catch{throw Error('Resposta inválida do servidor.');}
+      if(!response.ok)throw Error(body.error||'Não foi possível completar a operação.');
+      return body;
+    }
+    async register(input){this._session=await this.request('/api/cadastro',input);return this.session;}
+    async login(input){this._session=await this.request('/api/login',input);return this.session;}
+    logout(){this._session=null;return this.request('/api/logout',{});}
+  }
+  return {LocalAccount,HttpAccount,validateBuyer};
+});
+
+</script>
+<script>
+/* PDF A4 gerado localmente. Sem bibliotecas, rede ou janela de impressão. */
+(function(root,factory){
+  const api=factory(typeof module==='object'&&module.exports?require('./account.js'):root.GZAccount);
+  if(typeof module==='object'&&module.exports)module.exports=api;
+  else root.GZReceipt=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(Account){
+  'use strict';
+  const WIDTHS={"regular":[761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,278,278,355,556,556,889,667,191,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,278,278,584,584,584,556,1015,667,667,722,722,667,611,778,722,278,500,667,556,833,722,778,667,778,722,667,611,722,667,944,667,667,611,278,278,278,469,556,333,556,556,500,556,556,278,556,556,222,222,500,222,833,556,556,556,556,333,500,278,556,500,722,500,500,500,334,260,334,584,761,556,556,222,556,333,1000,556,556,333,1000,667,333,1000,556,611,556,556,222,222,333,333,350,556,1000,333,1000,500,333,944,556,500,667,278,333,556,556,556,556,260,556,333,737,370,556,584,333,737,333,400,584,333,333,333,556,537,278,333,333,365,556,834,834,834,611,667,667,667,667,667,667,1000,722,667,667,667,667,278,278,278,278,722,722,778,778,778,778,778,584,778,722,722,722,722,667,667,611,556,556,556,556,556,556,889,500,556,556,556,556,278,278,278,278,556,556,556,556,556,556,556,584,611,556,556,556,556,500,556,500],"bold":[761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,761,278,333,474,556,556,889,722,238,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,333,333,584,584,584,611,975,722,722,722,722,667,611,778,722,278,556,722,611,833,722,778,667,778,722,667,611,722,667,944,667,667,611,333,278,333,584,556,333,556,611,556,611,556,333,611,611,278,278,556,278,889,611,611,611,611,389,556,333,611,556,778,556,556,500,389,280,389,584,761,556,611,278,556,500,1000,556,556,333,1000,667,333,1000,611,611,611,611,278,278,500,500,350,556,1000,333,1000,556,333,944,611,500,667,278,333,556,556,556,556,280,556,333,737,370,556,584,333,737,333,400,584,333,333,333,611,556,278,333,333,365,556,834,834,834,611,722,722,722,722,722,722,1000,722,667,667,667,667,278,278,278,278,722,722,778,778,778,778,778,584,778,722,722,722,722,667,667,611,556,556,556,556,556,556,889,556,556,556,556,556,278,278,278,278,611,611,611,611,611,611,611,584,611,611,611,611,611,556,611,556]};
+  const specials={8364:128,8218:130,402:131,8222:132,8230:133,8224:134,8225:135,710:136,8240:137,352:138,8249:139,338:140,381:142,8216:145,8217:146,8220:147,8221:148,8226:149,8211:150,8212:151,732:152,8482:153,353:154,8250:155,339:156,382:158,376:159};
+  function bytes(value){return Array.from(String(value),ch=>{const c=ch.codePointAt(0);return (c>=32&&c<=126)||(c>=160&&c<=255)?c:(specials[c]||63);});}
+  function hex(value){return bytes(value).map(c=>c.toString(16).padStart(2,'0')).join('');}
+  function measure(value,size=10,bold=false){return bytes(value).reduce((sum,c)=>sum+WIDTHS[bold?'bold':'regular'][c],0)*size/1000;}
+  function wrap(value,maxWidth,size=10,bold=false){
+    const lines=[];let current='';
+    for(const word of String(value).replace(/\s+/g,' ').trim().split(' ')){
+      if(measure(current?(current+' '+word):word,size,bold)<=maxWidth){current+=(current?' ':'')+word;continue;}
+      if(current){lines.push(current);current='';}
+      for(const ch of word){if(current&&measure(current+ch,size,bold)>maxWidth){lines.push(current);current='';}current+=ch;}
+    }
+    if(current)lines.push(current);return lines.length?lines:[''];
+  }
+  const money=c=>(c/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+  function validate(receipt){
+    if(!receipt||receipt.tipo!=='simulacao-sem-cobranca'||!Array.isArray(receipt.itens)||receipt.itens.length<1||receipt.itens.length>200)throw Error('Simulação inválida.');
+    if(typeof receipt.codigo!=='string'||!/^[A-Z0-9-]{1,48}$/.test(receipt.codigo)||!Number.isFinite(Date.parse(receipt.data)))throw Error('Identificação da simulação inválida.');
+    Account.validateBuyer(receipt.comprador);
+    let total=0;
+    for(const i of receipt.itens){
+      if(!i||typeof i.nome!=='string'||!i.nome.trim()||i.nome.length>100||!Number.isInteger(i.quantidade)||i.quantidade<1||i.quantidade>99||!Number.isSafeInteger(i.precoUnitarioCentavos)||i.precoUnitarioCentavos<0||i.precoUnitarioCentavos>100000000||!Number.isSafeInteger(i.subtotalCentavos)||i.subtotalCentavos!==i.precoUnitarioCentavos*i.quantidade)throw Error('Itens da simulação inválidos.');
+      total+=i.subtotalCentavos;
+    }
+    if(!Number.isSafeInteger(receipt.totalCentavos)||receipt.totalCentavos!==total)throw Error('Total da simulação inconsistente.');
+  }
+  function create(receipt){
+    validate(receipt);
+    const W=595.28,H=841.89,L=44,R=W-44;
+    const dark=[.075,.055,.14],purple=[.39,.23,.66],muted=[.38,.38,.45],light=[.95,.94,.98];
+    let content=[],pages=[],y=0;
+    const rgb=c=>c.join(' ');
+    const rectangle=(x,top,w,h,color)=>content.push(`${rgb(color)} rg ${x} ${(H-top-h).toFixed(2)} ${w} ${h} re f`);
+    const text=(x,top,value,size=10,bold=false,color=dark)=>content.push(`${rgb(color)} rg BT /${bold?'F2':'F1'} ${size} Tf 1 0 0 1 ${x.toFixed(2)} ${(H-top).toFixed(2)} Tm <${hex(value)}> Tj ET`);
+    const right=(x,top,value,size=10,bold=false,color=dark)=>text(x-measure(value,size,bold),top,value,size,bold,color);
+    const line=(top)=>content.push(`0.86 0.85 0.9 RG 0.5 w ${L} ${(H-top).toFixed(2)} m ${R} ${(H-top).toFixed(2)} l S`);
+    const date=new Intl.DateTimeFormat('pt-BR',{timeZone:'America/Boa_Vista',dateStyle:'short',timeStyle:'short'}).format(new Date(receipt.data));
+    const buyer=Account.validateBuyer(receipt.comprador);
+    const buyerLines=[...wrap('Nome: '+buyer.nome,R-L-24,9.5),...wrap('E-mail: '+buyer.email,R-L-24,9.5)];
+    if(buyer.telefone)buyerLines.push(...wrap('Telefone: '+buyer.telefone,R-L-24,9.5));
+    if(buyer.endereco)buyerLines.push(...wrap('Endereço: '+buyer.endereco,R-L-24,9.5));
+    const buyerHeight=33+buyerLines.length*13;
+    function page(){
+      if(content.length)pages.push(content);
+      content=[];rectangle(0,0,W,92,dark);
+      text(L,39,'GAMEZONE',24,true,[1,1,1]);
+      text(L,64,'COMPROVANTE DE SIMULAÇÃO',10,true,[.78,.69,.96]);
+      right(R,41,'SEM COBRANÇA',10,true,[.64,.92,.83]);
+      text(L,119,'SIMULAÇÃO',8,true,muted);text(L,137,receipt.codigo,10,true);
+      right(R,119,'DATA E HORA (UTC-4)',8,true,muted);right(R,137,date,10);
+      rectangle(L,157,R-L,43,light);
+      text(L+12,174,'Documento demonstrativo. Nenhuma compra ou pagamento foi realizado.',9,true,purple);
+      text(L+12,190,'Sem valor fiscal. Produtos, preços e disponibilidade são ilustrativos.',8.5,false,muted);
+      rectangle(L,214,R-L,buyerHeight,[.97,.97,.98]);
+      text(L+12,232,'DADOS DO COMPRADOR',8,true,purple);
+      buyerLines.forEach((value,i)=>text(L+12,249+i*13,value,9.5));
+      const heading=214+buyerHeight+22;
+      text(L,heading,'ITENS DO SETUP',10,true,purple);
+      rectangle(L,heading+14,R-L,28,light);
+      text(L+9,heading+32,'PRODUTO',8,true);right(341,heading+32,'QTD.',8,true);right(438,heading+32,'UNITÁRIO',8,true);right(R-9,heading+32,'SUBTOTAL',8,true);
+      y=heading+59;
+    }
+    page();
+    for(const item of receipt.itens){
+      const names=wrap(item.nome,246,10),height=Math.max(34,names.length*14+16);
+      if(y+height>694)page();
+      names.forEach((name,n)=>text(L+9,y+n*14,name,10));
+      right(341,y,String(item.quantidade),10);right(438,y,money(item.precoUnitarioCentavos),9.5);right(R-9,y,money(item.subtotalCentavos),9.5,true);
+      y+=height;line(y-15);
+    }
+    if(y+98>740)page();
+    y+=7;rectangle(L,y,R-L,54,dark);
+    text(L+15,y+31,'TOTAL DA SIMULAÇÃO',10,true,[1,1,1]);
+    right(R-15,y+34,money(receipt.totalCentavos),20,true,[1,1,1]);
+    text(L,y+78,'Sem frete, tributos calculados ou cobrança. Este comprovante não é uma nota fiscal.',8,false,muted);
+    pages.push(content);
+    const objects=[];
+    const add=s=>{objects.push(s);return objects.length;};
+    add('');add('');
+    const font=add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>');
+    const boldFont=add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>');
+    const refs=[];
+    pages.forEach((commands,index)=>{
+      content=commands;
+      line(776);text(L,795,'GAMEZONE | Protótipo acadêmico | Comprovante sem valor fiscal',8,false,muted);
+      right(R,795,`Página ${index+1} de ${pages.length}`,8,false,muted);
+      const stream=content.join('\n')+'\n';
+      const streamRef=add(`<< /Length ${stream.length} >>\nstream\n${stream}endstream`);
+      refs.push(add(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${W} ${H}] /Resources << /Font << /F1 ${font} 0 R /F2 ${boldFont} 0 R >> >> /Contents ${streamRef} 0 R >>`));
+    });
+    objects[0]='<< /Type /Catalog /Pages 2 0 R >>';
+    objects[1]=`<< /Type /Pages /Count ${refs.length} /Kids [${refs.map(r=>r+' 0 R').join(' ')}] >>`;
+    const info=add(`<< /Title <${hex('GameZone - Comprovante de simulação')}> /Author (GameZone) /Producer (GameZone Offline) >>`);
+    let pdf='%PDF-1.4\n',offsets=[0];
+    objects.forEach((obj,i)=>{offsets.push(pdf.length);pdf+=`${i+1} 0 obj\n${obj}\nendobj\n`;});
+    const xref=pdf.length;
+    pdf+=`xref\n0 ${objects.length+1}\n0000000000 65535 f \n`;
+    for(const offset of offsets.slice(1))pdf+=String(offset).padStart(10,'0')+' 00000 n \n';
+    pdf+=`trailer\n<< /Size ${objects.length+1} /Root 1 0 R /Info ${info} 0 R >>\nstartxref\n${xref}\n%%EOF\n`;
+    return new TextEncoder().encode(pdf);
+  }
+  return {create,validate};
+});
+
+</script>
+<script>
+window.GZ_OFFLINE = true;
+window.GZ_ASSETS = {"assets/img/controle.svg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjgwIiByb2xlPSJpbWciPjx0aXRsZT5JbHVzdHJhw6fDo28gZGUgY29udHJvbGUgZ2FtZXI8L3RpdGxlPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYm9keSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM1MTU2NjYiLz48c3RvcCBvZmZzZXQ9Ii40IiBzdG9wLWNvbG9yPSIjMjcyYjM5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTAxMjFlIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9InJnYiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9Ii42Ij48c3RvcCBzdG9wLWNvbG9yPSIjNmNlYmQ3Ii8+PHN0b3Agb2Zmc2V0PSIuNCIgc3RvcC1jb2xvcj0iIzhiNzdmOCIvPjxzdG9wIG9mZnNldD0iLjciIHN0b3AtY29sb3I9IiNlNTdlZGIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM1ZGNjZWQiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ic2NyZWVuIiB4MT0iMCIgeTE9IjEiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iIzE2NGQ3MCIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiMzMzI0NmQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjMDUzYjQiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iY3VwIj48c3RvcCBzdG9wLWNvbG9yPSIjM2M0MTUyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTExMzFkIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJyb3RhdGUoLTggMjAwIDE0MCkiPjxwYXRoIGQ9Ik0xMjIgODNxLTQyLTEtNTggNjJsLTEzIDUycS02IDM2IDE3IDQwIDIyIDUgNTItMzZoMTYwcTMwIDQxIDUyIDM2IDIzLTQgMTctNDBsLTEzLTUycS0xNi02My01OC02MnoiIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzZiNmQ4MyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTEwNCA4N3YtOXExMy0xMSAzNC0ydjZtMTI2IDB2LTZxMjEtOSAzNCAydjkiIGZpbGw9IiMxNzFiMjkiIHN0cm9rZT0iIzZmNmY4NSIvPjxyZWN0IHg9IjkxIiB5PSIxMTQiIHdpZHRoPSI1MiIgaGVpZ2h0PSIxNiIgcng9IjMiIGZpbGw9IiMxMjE1MjIiIHN0cm9rZT0iIzZkNmU4NiIvPjxyZWN0IHg9IjEwOSIgeT0iOTYiIHdpZHRoPSIxNiIgaGVpZ2h0PSI1MiIgcng9IjMiIGZpbGw9IiMxMjE1MjIiIHN0cm9rZT0iIzZkNmU4NiIvPjxjaXJjbGUgY3g9IjE2MCIgY3k9IjE3NSIgcj0iMjMiIGZpbGw9IiMxMjE1MjIiIHN0cm9rZT0iIzcyNzA4YiIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iMTc1IiByPSIxNiIgZmlsbD0iIzMwMzQ0OCIvPjxjaXJjbGUgY3g9IjIzOCIgY3k9IjE3NSIgcj0iMjMiIGZpbGw9IiMxMjE1MjIiIHN0cm9rZT0iIzcyNzA4YiIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMjM4IiBjeT0iMTc1IiByPSIxNiIgZmlsbD0iIzMwMzQ0OCIvPjxjaXJjbGUgY3g9IjI4NCIgY3k9IjEwMSIgcj0iOSIgZmlsbD0iIzFiMjIzMSIgc3Ryb2tlPSIjOGQ3ZGU1IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIzMDYiIGN5PSIxMjIiIHI9IjkiIGZpbGw9IiMxYjIyMzEiIHN0cm9rZT0iI2Q5ODViMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMjg0IiBjeT0iMTQ0IiByPSI5IiBmaWxsPSIjMWIyMjMxIiBzdHJva2U9IiM3OWNiYmMiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjI2MiIgY3k9IjEyMiIgcj0iOSIgZmlsbD0iIzFiMjIzMSIgc3Ryb2tlPSIjNzhhN2RkIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTcyIDEwMGg1NCIgc3Ryb2tlPSJ1cmwoI3JnYikiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Im0xOTUgMTIwLTcgMTJoOWwtMiAxMCAxNC0xN2gtMTFsMy01IiBmaWxsPSIjYWY5M2VkIi8+PHBhdGggZD0iTTcxIDE5NHExNi02NyAzNC04M20yMjQgODNxLTE2LTY3LTM0LTgzIiBzdHJva2U9IiM4NDg0OWQiIG9wYWNpdHk9Ii40IiBmaWxsPSJub25lIi8+PC9nPjwvc3ZnPg==", "assets/img/headset.svg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjgwIiByb2xlPSJpbWciPjx0aXRsZT5JbHVzdHJhw6fDo28gZGUgaGVhZHNldCBnYW1lcjwvdGl0bGU+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJib2R5IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzUxNTY2NiIvPjxzdG9wIG9mZnNldD0iLjQiIHN0b3AtY29sb3I9IiMyNzJiMzkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMDEyMWUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0icmdiIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iLjYiPjxzdG9wIHN0b3AtY29sb3I9IiM2Y2ViZDciLz48c3RvcCBvZmZzZXQ9Ii40IiBzdG9wLWNvbG9yPSIjOGI3N2Y4Ii8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iI2U1N2VkYiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzVkY2NlZCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJzY3JlZW4iIHgxPSIwIiB5MT0iMSIgeDI9IjEiIHkyPSIwIj48c3RvcCBzdG9wLWNvbG9yPSIjMTY0ZDcwIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzMzMjQ2ZCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2MwNTNiNCIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjdXAiPjxzdG9wIHN0b3AtY29sb3I9IiMzYzQxNTIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMTEzMWQiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4IDApIj48cGF0aCBkPSJNOTYgMTUyVjExM2E5NiA5NiAwIDAgMSAxOTIgMHYzOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExMzFjIiBzdHJva2Utd2lkdGg9IjMwIi8+PHBhdGggZD0iTTk2IDE1MlYxMTNhOTYgOTYgMCAwIDEgMTkyIDB2MzkiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNib2R5KSIgc3Ryb2tlLXdpZHRoPSIyMyIvPjxwYXRoIGQ9Ik0xMDUgOTZhODggODggMCAwIDEgMTc0IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwNzU4YiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTEyMCA3MGE4MSA4MSAwIDAgMSAxNDUgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjAyMzMyIiBzdHJva2Utd2lkdGg9IjEyIi8+PHBhdGggZD0iTTk3IDEyOXY2Mm0xOTEtNjJ2NjIiIHN0cm9rZT0iIzlmYTRiMyIgc3Ryb2tlLXdpZHRoPSI2Ii8+PGcgdHJhbnNmb3JtPSJyb3RhdGUoLTkgMTA0IDE4MykiPjxyZWN0IHg9IjY0IiB5PSIxMzQiIHdpZHRoPSI2NiIgaGVpZ2h0PSIxMDYiIHJ4PSIyNyIgZmlsbD0iIzBkMGYxOSIgc3Ryb2tlPSIjNDg0YzYwIiBzdHJva2Utd2lkdGg9IjMiLz48cmVjdCB4PSI3MiIgeT0iMTQxIiB3aWR0aD0iNDkiIGhlaWdodD0iOTEiIHJ4PSIyMiIgZmlsbD0idXJsKCNjdXApIi8+PHJlY3QgeD0iNzciIHk9IjE0NiIgd2lkdGg9IjM5IiBoZWlnaHQ9IjgxIiByeD0iMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNyZ2IpIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJtOTQgMTc1LTcgMTVoMTBsLTMgMTUgMTUtMjNoLTEwbDMtNyIgZmlsbD0iI2E4OGJmYSIvPjwvZz48ZyB0cmFuc2Zvcm09InJvdGF0ZSg5IDI4MiAxODMpIj48cmVjdCB4PSIyNTQiIHk9IjEzNCIgd2lkdGg9IjY2IiBoZWlnaHQ9IjEwNiIgcng9IjI3IiBmaWxsPSIjMGQwZjE5IiBzdHJva2U9IiM0ODRjNjAiIHN0cm9rZS13aWR0aD0iMyIvPjxyZWN0IHg9IjI2MyIgeT0iMTQyIiB3aWR0aD0iNDkiIGhlaWdodD0iOTAiIHJ4PSIyMiIgZmlsbD0idXJsKCNjdXApIi8+PHJlY3QgeD0iMjY5IiB5PSIxNDgiIHdpZHRoPSIzNiIgaGVpZ2h0PSI3OCIgcng9IjE3IiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjcmdiKSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0ibTI4NCAxNzYtNyAxNWgxMGwtMyAxNSAxNS0yM2gtMTBsMy03IiBmaWxsPSIjYTg4YmZhIi8+PC9nPjxwYXRoIGQ9Ik04NSAyMjVxLTE0IDI4IDI0IDMyaDQ0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMDM2NGIiIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHJlY3QgeD0iMTQ1IiB5PSIyNTAiIHdpZHRoPSIyOCIgaGVpZ2h0PSIxMyIgcng9IjYiIGZpbGw9IiM2NTY3N2QiLz48L2c+PC9zdmc+", "assets/img/monitor.svg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjgwIiByb2xlPSJpbWciPjx0aXRsZT5JbHVzdHJhw6fDo28gZGUgbW9uaXRvciBnYW1lcjwvdGl0bGU+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJib2R5IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzUxNTY2NiIvPjxzdG9wIG9mZnNldD0iLjQiIHN0b3AtY29sb3I9IiMyNzJiMzkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMDEyMWUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0icmdiIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iLjYiPjxzdG9wIHN0b3AtY29sb3I9IiM2Y2ViZDciLz48c3RvcCBvZmZzZXQ9Ii40IiBzdG9wLWNvbG9yPSIjOGI3N2Y4Ii8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iI2U1N2VkYiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzVkY2NlZCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJzY3JlZW4iIHgxPSIwIiB5MT0iMSIgeDI9IjEiIHkyPSIwIj48c3RvcCBzdG9wLWNvbG9yPSIjMTY0ZDcwIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzMzMjQ2ZCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2MwNTNiNCIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjdXAiPjxzdG9wIHN0b3AtY29sb3I9IiMzYzQxNTIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMTEzMWQiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJtMTgxIDIwOC03IDM2aC0zNnY4aDEyNHYtOGgtMzZsLTctMzYiIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzU0NTk2YiIvPjxyZWN0IHg9IjM5IiB5PSIzMCIgd2lkdGg9IjMyMiIgaGVpZ2h0PSIxODUiIHJ4PSI5IiBmaWxsPSIjMTQxNzIyIiBzdHJva2U9IiM2ODZiN2QiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9IjQ4IiB5PSIzOSIgd2lkdGg9IjMwNCIgaGVpZ2h0PSIxNjMiIHJ4PSIyIiBmaWxsPSJ1cmwoI3NjcmVlbikiLz48cGF0aCBkPSJtNDggMjAxIDk1LTExMyA1NiA4MCA2My0xMDEgOTAgNzF2NjR6IiBmaWxsPSIjMGIxODNkIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Im00OCAyMDEgOTUtMTEzIDU2IDgwIDYzLTEwMSA5MCA3MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOGM4OGZiIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJtNDggMTgzIDY2LTU3IDQ0IDU1IDU1LTcxIDU4IDkyIiBmaWxsPSJub25lIiBzdHJva2U9IiM0N2M1ZTYiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNNDggMTg1aDMwNG0tMzA0LTIxaDMwNG0tMzA0LTIxaDMwNCIgc3Ryb2tlPSIjYWViMGZmIiBvcGFjaXR5PSIuMDgiLz48cGF0aCBkPSJtMTk2IDEwMi0xMyAyMWgxN2wtNSAyMSAyOC0zMmgtMjFsNy0xMCIgZmlsbD0iI2QxYmNmZiIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwOSIgcj0iMiIgZmlsbD0iIzcwZTFkZSIvPjwvc3ZnPg==", "assets/img/mouse.svg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjgwIiByb2xlPSJpbWciPjx0aXRsZT5JbHVzdHJhw6fDo28gZGUgbW91c2UgZ2FtZXI8L3RpdGxlPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYm9keSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM1MTU2NjYiLz48c3RvcCBvZmZzZXQ9Ii40IiBzdG9wLWNvbG9yPSIjMjcyYjM5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTAxMjFlIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9InJnYiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9Ii42Ij48c3RvcCBzdG9wLWNvbG9yPSIjNmNlYmQ3Ii8+PHN0b3Agb2Zmc2V0PSIuNCIgc3RvcC1jb2xvcj0iIzhiNzdmOCIvPjxzdG9wIG9mZnNldD0iLjciIHN0b3AtY29sb3I9IiNlNTdlZGIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM1ZGNjZWQiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ic2NyZWVuIiB4MT0iMCIgeTE9IjEiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iIzE2NGQ3MCIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiMzMzI0NmQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjMDUzYjQiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iY3VwIj48c3RvcCBzdG9wLWNvbG9yPSIjM2M0MTUyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTExMzFkIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJyb3RhdGUoLTE4IDIwMCAxNDUpIj48cGF0aCBkPSJNMTk5IDU3VjM1cTAtMTYgMTgtMjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNiNDE1MCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTE0NCA5NXE0LTQ0IDU1LTQ0dDU3IDQ0bDEwIDgwcTQgNTctNjYgNjMtNzAtNS02NS02M3oiIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzY0Njg3YSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTE0NCAxMDhxLTIxIDg2IDkgMTA4bTEwMy0xMDhxMjEgODYtOSAxMDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNyZ2IpIiBzdHJva2Utd2lkdGg9IjQiLz48cGF0aCBkPSJNMTk5IDU1djkwbS01NC0yMyA1NCAyMyA1Ni0yMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGUxMjFiIiBzdHJva2Utd2lkdGg9IjMiLz48cmVjdCB4PSIxOTEiIHk9Ijc3IiB3aWR0aD0iMTYiIGhlaWdodD0iMzEiIHJ4PSI3IiBmaWxsPSIjMTExMjFhIiBzdHJva2U9IiM2NTc2OGYiLz48cGF0aCBkPSJNMTk5IDgydjE5IiBzdHJva2U9IiM4YWNmZTIiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Im0xOTQgMTc0LTkgMTZoMTNsLTMgMTUgMjAtMjRoLTEzbDUtNyIgZmlsbD0idXJsKCNyZ2IpIi8+PHBhdGggZD0iTTE2MCA3NXExMC0xMiAyMy0xMyIgc3Ryb2tlPSIjOTY5YmFhIiBzdHJva2Utb3BhY2l0eT0iLjYiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48L3N2Zz4=", "assets/img/mousepad.svg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjgwIiByb2xlPSJpbWciPjx0aXRsZT5JbHVzdHJhw6fDo28gZGUgbW91c2VwYWQgZ2FtZXI8L3RpdGxlPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYm9keSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM1MTU2NjYiLz48c3RvcCBvZmZzZXQ9Ii40IiBzdG9wLWNvbG9yPSIjMjcyYjM5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTAxMjFlIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9InJnYiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9Ii42Ij48c3RvcCBzdG9wLWNvbG9yPSIjNmNlYmQ3Ii8+PHN0b3Agb2Zmc2V0PSIuNCIgc3RvcC1jb2xvcj0iIzhiNzdmOCIvPjxzdG9wIG9mZnNldD0iLjciIHN0b3AtY29sb3I9IiNlNTdlZGIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM1ZGNjZWQiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ic2NyZWVuIiB4MT0iMCIgeTE9IjEiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iIzE2NGQ3MCIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiMzMzI0NmQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjMDUzYjQiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iY3VwIj48c3RvcCBzdG9wLWNvbG9yPSIjM2M0MTUyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTExMzFkIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJyb3RhdGUoLTEwIDIwMCAxNDUpIj48cmVjdCB4PSIzNSIgeT0iNjUiIHdpZHRoPSIzMzIiIGhlaWdodD0iMTY3IiByeD0iMTciIGZpbGw9IiMxMDE1MjIiIHN0cm9rZT0iIzM5M2I1NCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHJlY3QgeD0iMzYiIHk9IjY1IiB3aWR0aD0iMzMwIiBoZWlnaHQ9IjE2NCIgcng9IjE1IiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjcmdiKSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0ibTQ2IDIxOCAxMjctMTQxbS03OCAxNDVMMjIyIDc3bS03OCAxNDVMMjcxIDc3bS03OCAxNDVMMzIwIDc3bS03OCAxNDUgMTEwLTEyM20tNjAgMTIzIDYwLTY4IiBzdHJva2U9IiMzNzMxNGMiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJtMTkwIDEwOS0yNyA0MmgzM2wtOSAzOSA0Ny01N2gtMzdsMTEtMjQiIGZpbGw9IiM5Mjc1ZDkiIG9wYWNpdHk9Ii43Ii8+PHBhdGggZD0iTTI4NSA2NnYtMTdxMC0xNSAxNC0xNWg1MyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2Q0MTUzIiBzdHJva2Utd2lkdGg9IjQiLz48L2c+PC9zdmc+", "assets/img/teclado.svg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjgwIiByb2xlPSJpbWciPjx0aXRsZT5JbHVzdHJhw6fDo28gZGUgdGVjbGFkbyBnYW1lcjwvdGl0bGU+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJib2R5IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzUxNTY2NiIvPjxzdG9wIG9mZnNldD0iLjQiIHN0b3AtY29sb3I9IiMyNzJiMzkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMDEyMWUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0icmdiIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iLjYiPjxzdG9wIHN0b3AtY29sb3I9IiM2Y2ViZDciLz48c3RvcCBvZmZzZXQ9Ii40IiBzdG9wLWNvbG9yPSIjOGI3N2Y4Ii8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iI2U1N2VkYiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzVkY2NlZCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJzY3JlZW4iIHgxPSIwIiB5MT0iMSIgeDI9IjEiIHkyPSIwIj48c3RvcCBzdG9wLWNvbG9yPSIjMTY0ZDcwIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzMzMjQ2ZCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2MwNTNiNCIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjdXAiPjxzdG9wIHN0b3AtY29sb3I9IiMzYzQxNTIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMTEzMWQiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAxKSByb3RhdGUoLTggMjAwIDE0MCkiPjxwYXRoIGQ9Ik0xODUgODN2LTIwcTAtMTUgMjAtMThoNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM2M2E0OCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHJlY3QgeD0iMzYiIHk9Ijg1IiB3aWR0aD0iMzMwIiBoZWlnaHQ9IjEyNCIgcng9IjExIiBmaWxsPSJ1cmwoI2JvZHkpIiBzdHJva2U9IiM1NTU4NmQiLz48cmVjdCB4PSI0MCIgeT0iMjAxIiB3aWR0aD0iMzIyIiBoZWlnaHQ9IjQiIHJ4PSIyIiBmaWxsPSJ1cmwoI3JnYikiLz48cmVjdCB4PSI0OCIgeT0iOTIiIHdpZHRoPSIzMDYiIGhlaWdodD0iMTAzIiByeD0iNSIgZmlsbD0iIzExMTUyMCIvPjxyZWN0IHg9IjU0IiB5PSI5OCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjNjhkOWRjIiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTU4IDEwM2g0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSI3MyIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik03NyAxMDNoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iOTIiIHk9Ijk4IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM2OGQ5ZGMiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNOTYgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjExMSIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0xMTUgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjEzMCIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0xMzQgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjE0OSIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0xNTMgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjE2OCIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0xNzIgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjE4NyIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0xOTEgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjIwNiIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yMTAgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjIyNSIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yMjkgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjI0NCIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yNDggMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjI2MyIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yNjcgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjI4MiIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yODYgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjMwMSIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0zMDUgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjMyMCIgeT0iOTgiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzY4ZDlkYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0zMjQgMTAzaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjU0IiB5PSIxMTciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzhiODZlYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik01OCAxMjJoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iNzMiIHk9IjExNyIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjOGI4NmVjIiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTc3IDEyMmg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSI5MiIgeT0iMTE3IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM4Yjg2ZWMiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNOTYgMTIyaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjExMSIgeT0iMTE3IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM4Yjg2ZWMiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMTE1IDEyMmg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIxMzAiIHk9IjExNyIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjOGI4NmVjIiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTEzNCAxMjJoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMTQ5IiB5PSIxMTciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzhiODZlYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0xNTMgMTIyaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjE2OCIgeT0iMTE3IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM4Yjg2ZWMiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMTcyIDEyMmg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIxODciIHk9IjExNyIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjOGI4NmVjIiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTE5MSAxMjJoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMjA2IiB5PSIxMTciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzhiODZlYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yMTAgMTIyaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjIyNSIgeT0iMTE3IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM4Yjg2ZWMiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMjI5IDEyMmg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIyNDQiIHk9IjExNyIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjOGI4NmVjIiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTI0OCAxMjJoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMjYzIiB5PSIxMTciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzhiODZlYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yNjcgMTIyaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjI4MiIgeT0iMTE3IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM4Yjg2ZWMiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMjg2IDEyMmg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIzMDEiIHk9IjExNyIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjOGI4NmVjIiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTMwNSAxMjJoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMzIwIiB5PSIxMTciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzhiODZlYyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0zMjQgMTIyaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjU0IiB5PSIxMzYiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2I2NzdlNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik01OCAxNDFoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iNzMiIHk9IjEzNiIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjYjY3N2U3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTc3IDE0MWg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSI5MiIgeT0iMTM2IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNiNjc3ZTciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNOTYgMTQxaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjExMSIgeT0iMTM2IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNiNjc3ZTciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMTE1IDE0MWg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIxMzAiIHk9IjEzNiIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjYjY3N2U3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTEzNCAxNDFoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMTQ5IiB5PSIxMzYiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2I2NzdlNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0xNTMgMTQxaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjE2OCIgeT0iMTM2IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNiNjc3ZTciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMTcyIDE0MWg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIxODciIHk9IjEzNiIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjYjY3N2U3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTE5MSAxNDFoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMjA2IiB5PSIxMzYiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2I2NzdlNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yMTAgMTQxaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjIyNSIgeT0iMTM2IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNiNjc3ZTciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMjI5IDE0MWg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIyNDQiIHk9IjEzNiIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjYjY3N2U3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTI0OCAxNDFoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMjYzIiB5PSIxMzYiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2I2NzdlNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yNjcgMTQxaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjI4MiIgeT0iMTM2IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNiNjc3ZTciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMjg2IDE0MWg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIzMDEiIHk9IjEzNiIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjYjY3N2U3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTMwNSAxNDFoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMzIwIiB5PSIxMzYiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2I2NzdlNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0zMjQgMTQxaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjU0IiB5PSIxNTUiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2RmOGRkNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik01OCAxNjBoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iNzMiIHk9IjE1NSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjZGY4ZGQ3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTc3IDE2MGg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSI5MiIgeT0iMTU1IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNkZjhkZDciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNOTYgMTYwaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjExMSIgeT0iMTU1IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNkZjhkZDciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMTE1IDE2MGg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIxMzAiIHk9IjE1NSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjZGY4ZGQ3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTEzNCAxNjBoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMTQ5IiB5PSIxNTUiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2RmOGRkNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0xNTMgMTYwaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjE2OCIgeT0iMTU1IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNkZjhkZDciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMTcyIDE2MGg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIxODciIHk9IjE1NSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjZGY4ZGQ3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTE5MSAxNjBoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMjA2IiB5PSIxNTUiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2RmOGRkNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yMTAgMTYwaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjIyNSIgeT0iMTU1IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNkZjhkZDciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMjI5IDE2MGg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIyNDQiIHk9IjE1NSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjZGY4ZGQ3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTI0OCAxNjBoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMjYzIiB5PSIxNTUiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2RmOGRkNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yNjcgMTYwaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjI4MiIgeT0iMTU1IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiNkZjhkZDciIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMjg2IDE2MGg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIzMDEiIHk9IjE1NSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjZGY4ZGQ3IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTMwNSAxNjBoNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMzIwIiB5PSIxNTUiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iI2RmOGRkNyIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0zMjQgMTYwaDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjU0IiB5PSIxNzQiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzhiYmRlOCIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik01OCAxNzloNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iNzMiIHk9IjE3NCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjOGJiZGU4IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTc3IDE3OWg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSI5MiIgeT0iMTc0IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM4YmJkZTgiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNOTYgMTc5aDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjI0NCIgeT0iMTc0IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM4YmJkZTgiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMjQ4IDE3OWg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIyNjMiIHk9IjE3NCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjOGJiZGU4IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTI2NyAxNzloNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMjgyIiB5PSIxNzQiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNCIgcng9IjIiIGZpbGw9IiMyOTJlM2IiIHN0cm9rZT0iIzhiYmRlOCIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxwYXRoIGQ9Ik0yODYgMTc5aDQiIHN0cm9rZT0iI2I5YmRkMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPjxyZWN0IHg9IjMwMSIgeT0iMTc0IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM4YmJkZTgiIHN0cm9rZS13aWR0aD0iLjgiLz48cGF0aCBkPSJNMzA1IDE3OWg0IiBzdHJva2U9IiNiOWJkZDAiIHN0cm9rZS13aWR0aD0iLjciLz48cmVjdCB4PSIzMjAiIHk9IjE3NCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iIzI5MmUzYiIgc3Ryb2tlPSIjOGJiZGU4IiBzdHJva2Utd2lkdGg9Ii44Ii8+PHBhdGggZD0iTTMyNCAxNzloNCIgc3Ryb2tlPSIjYjliZGQwIiBzdHJva2Utd2lkdGg9Ii43Ii8+PHJlY3QgeD0iMTExIiB5PSIxNzQiIHdpZHRoPSIxMjgiIGhlaWdodD0iMTQiIHJ4PSIyIiBmaWxsPSIjMjkyZTNiIiBzdHJva2U9IiM5YzdhZTYiLz48cGF0aCBkPSJNNDYgOTFoMzA0IiBzdHJva2U9IiM3YjdmOGUiIHN0cm9rZS1vcGFjaXR5PSIuNCIvPjwvZz48L3N2Zz4="};
+/* GameZone • nenhum recurso remoto é necessário para o catálogo. */
+(async function () {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const money = cents => (cents / 100).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
+  const STORE = 'gamezone.offline.v1';
+  const bundled = JSON.parse($('catalog-data').textContent);
+  const asset = path => (window.GZ_ASSETS && window.GZ_ASSETS[path]) || path;
+  let products = GZ.validateCatalog(bundled).products;
+  let cart = [], category = '', receipt = null, toastTimer;
+  let storageOK = true, storageWarned = false;
+  let serverMode=false;
+  if (!window.GZ_OFFLINE && (location.protocol==='http:' || location.protocol==='https:')) {
+    try { const r=await fetch('/api/status',{cache:'no-store'}); serverMode=r.ok && (await r.json()).java===true; } catch { /* servidor Python portátil */ }
+  }
+  const account = serverMode ? new GZAccount.HttpAccount() : new GZAccount.LocalAccount({crypto:window.crypto,storage:()=>window.localStorage});
+  if(serverMode) $('auth-storage').textContent='Cadastro de demonstração armazenado em dados/clientes.txt no servidor Java. A senha é protegida por hash; a sessão termina ao reiniciar o servidor. Não use dados pessoais reais.';
+  let firstAccess=true,buyerConfirmed=false,guestSession=null;
+  const currentUser=()=>account.session||guestSession;
+  const make = (tag, cls, content) => { const el = document.createElement(tag); if (cls) el.className = cls; if (content !== undefined) el.textContent = content; return el; };
+  const button = (label, cls, action, aria) => { const b = make('button', cls, label); b.type = 'button'; if (aria) b.setAttribute('aria-label', aria); b.addEventListener('click', action); return b; };
+  function announce(message, error = false) {
+    clearTimeout(toastTimer); $('toast').textContent = message; $('toast').classList.toggle('error', error); $('toast').hidden = false;
+    toastTimer = setTimeout(() => { $('toast').hidden = true; }, error ? 8000 : 4000);
+  }
+  function storageStatus() {
+    if(!storageOK && !storageWarned){
+      storageWarned=true;
+      announce('O navegador não permite salvar o carrinho. Ele ficará disponível apenas enquanto esta página estiver aberta.',true);
+    }
+  }
+  const backup = () => ({schemaVersion:1, catalogo:products, carrinho:cart.map(i=>({...i})), preferencias:{altoContraste:document.body.classList.contains('high-contrast')}});
+  function save() {
+    try { localStorage.setItem(STORE, JSON.stringify(backup())); storageOK = true; } catch { storageOK = false; }
+    storageStatus();
+  }
+  // Sob HTTP, usa o arquivo JSON. Em file://, o JSON incorporado evita restrições de fetch.
+  if (!window.GZ_OFFLINE && (location.protocol === 'http:' || location.protocol === 'https:')) {
+    try {
+      const response = await fetch(serverMode?'/api/produtos':'data/produtos.json', {cache:'no-store'});
+      if (!response.ok) throw new Error('HTTP');
+      const result = GZ.validateCatalog(await response.json()); products = result.products;
+      if (result.rejected) announce(result.rejected + ' registro(s) inválido(s) foram ignorados.', true);
+    } catch { announce('Usando o catálogo incorporado ao HTML. O catálogo externo não pôde ser lido.'); }
+  }
+  try {
+    const saved = localStorage.getItem(STORE);
+    if (saved) {
+      const state = JSON.parse(saved);
+      if (state.schemaVersion !== 1) throw new Error('Versão inválida');
+      if (!serverMode) products = GZ.validateCatalog(state.catalogo).products;
+      cart = GZ.cleanCart(state.carrinho, products);
+      document.body.classList.toggle('high-contrast', state.preferencias?.altoContraste === true);
+    }
+    const probe = STORE + '.probe'; localStorage.setItem(probe,'1'); localStorage.removeItem(probe);
+  } catch { announce('Os dados locais não puderam ser recuperados. O catálogo padrão continua disponível.', true); storageOK = false; }
+  storageStatus();
+  function syncContrast() {
+    const enabled = document.body.classList.contains('high-contrast');
+    $('contrast').setAttribute('aria-pressed', String(enabled));
+    $('contrast').setAttribute('aria-label', (enabled ? 'Desativar' : 'Ativar') + ' alto contraste');
+  }
+  syncContrast();
+  $('contrast').addEventListener('click', () => { document.body.classList.toggle('high-contrast'); syncContrast(); save(); });
+  function openDialog(id) { const d = $(id); if (!d.open) d.showModal(); }
+  for (const d of document.querySelectorAll('dialog')) {
+    d.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => d.close()));
+    d.addEventListener('click', e => { if (e.target !== d) return; const r = d.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) d.close(); });
+  }
+  $('about-open').addEventListener('click',()=>openDialog('about-dialog'));
+  $('guide-open').addEventListener('click',()=>openDialog('guide-dialog'));
+  function renderCategories() {
+    $('categories').replaceChildren();
+    for (const c of ['', ...GZ.categories]) {
+      const b = button(c || 'Todos', 'category', () => { category = c; renderCategories(); renderProducts(); });
+      b.setAttribute('aria-pressed', String(category === c)); $('categories').append(b);
+    }
+  }
+  function updateSemantics() {
+    $('product-jsonld').textContent = JSON.stringify({'@context':'https://schema.org','@graph': products.map(p => ({
+      '@type':'Product', sku:p.id, name:p.nome, description:p.descricao, image:asset(p.imagem),
+      category:p.categoria, offers:{'@type':'Offer',priceCurrency:'BRL',price:(GZ.cents(p)/100).toFixed(2),availability:'https://schema.org/' + (p.disponivel?'InStock':'OutOfStock')}
+    }))});
+  }
+  function addItem(id) {
+    const p = products.find(x=>x.id===id); if (!p || !p.disponivel) return;
+    const item = cart.find(i=>i.id===id);
+    if (item && item.quantidade >= 99) { announce('Limite de 99 unidades por produto.', true); return; }
+    if (item) item.quantidade++; else cart.push({id, quantidade:1});
+    save(); renderCart(); announce(p.nome + ' adicionado ao carrinho.');
+  }
+  function productImage(p, cls) { const img = make('img', cls); img.src = asset(p.imagem); img.alt = 'Ilustração de ' + p.nome; img.loading = 'lazy'; img.width=320; img.height=220; return img; }
+  function showDetail(p) {
+    const region = $('detail-content'); region.replaceChildren(productImage(p,'detail-art'));
+    const title = make('h2','',p.nome); title.id='detail-title'; region.append(title, make('p','',p.descricao));
+    const list = make('ul','spec-list'); p.especificacoes.forEach(x=>list.append(make('li','',x))); region.append(list);
+    region.append(make('p','fine','Produto ilustrativo. Especificações demonstrativas.'),make('p', 'detail-price', money(GZ.cents(p))));
+    const add = button(p.disponivel?'Adicionar ao carrinho':'Produto indisponível','primary full',()=>addItem(p.id)); add.disabled=!p.disponivel; region.append(add);
+    openDialog('detail-dialog');
+  }
+  function renderProducts() {
+    const filtered = GZ.filterProducts(products, $('search').value, category, $('available').checked, $('sort').value);
+    $('result-count').textContent = filtered.length + ' de ' + products.length + ' equipamentos';
+    $('clear-search').hidden = !$('search').value;
+    $('empty').hidden = filtered.length !== 0;
+    const fragment = document.createDocumentFragment();
+    for (const p of filtered) {
+      const card=make('article','product');
+      const art=make('div','product-art'); art.append(make('span','product-badge',p.selo),productImage(p,''));
+      const info=make('div','product-info'); info.append(make('span','product-category',p.categoria),make('h3','',p.nome),make('p','product-description',p.descricao));
+      info.append(make('span','stock' + (p.disponivel?'':' unavailable'),p.disponivel?'● Disponível para simulação':'● Indisponível no momento'));
+      const price=make('p','product-price',money(GZ.cents(p))); price.append(make('small','','Preço demonstrativo')); info.append(price);
+      const bottom=make('div','product-bottom');
+      const add=button(p.disponivel?'+ Adicionar':'Indisponível','add-btn',()=>addItem(p.id),p.disponivel?'Adicionar ' + p.nome + ' ao carrinho':p.nome + ' indisponível'); add.disabled=!p.disponivel;
+      bottom.append(add,button('↗','details-btn',()=>showDetail(p),'Ver detalhes de ' + p.nome));
+      info.append(bottom); card.append(art,info); fragment.append(card);
+    }
+    $('products').replaceChildren(fragment);
+  }
+  function resetFilters() { $('search').value=''; category=''; $('available').checked=false; $('sort').value='destaque'; renderCategories(); renderProducts(); }
+  function applyQuery() {
+    $('search').value=GZ.parseQuery($('search').value);
+    // Comandos para ver todos restauram os filtros, inclusive após pesquisa por voz.
+    if (!$('search').value) { resetFilters(); return; }
+    category=''; renderCategories(); renderProducts();
+  }
+  $('search').addEventListener('input',renderProducts);
+  $('search-form').addEventListener('submit',e=>{e.preventDefault();applyQuery();});
+  $('clear-search').addEventListener('click',()=>{$('search').value='';renderProducts();$('search').focus();});
+  $('sort').addEventListener('change',renderProducts); $('available').addEventListener('change',renderProducts);
+  $('reset-filters').addEventListener('click',resetFilters);
+  function quantity(id, change, focusAction) {
+    const i=cart.find(x=>x.id===id); if (!i) return;
+    i.quantidade=Math.min(99,i.quantidade+change); if(i.quantidade<=0) cart=cart.filter(x=>x.id!==id);
+    save(); renderCart();
+    const row=Array.from($('cart-lines').children).find(x=>x.dataset.id===id);
+    (row?.querySelector('[data-action="'+focusAction+'"]') || $('checkout').disabled && $('cart-dialog').querySelector('[data-close]') || $('checkout')).focus();
+  }
+  function renderCart() {
+    cart=GZ.cleanCart(cart,products);
+    const count=cart.reduce((n,i)=>n+i.quantidade,0); $('cart-count').textContent=count;
+    $('cart-open').setAttribute('aria-label','Abrir carrinho, ' + count + ' item(ns)'); $('cart-items-label').textContent='(' + count + ')';
+    $('cart-lines').replaceChildren();
+    if(!cart.length) $('cart-lines').append(make('p','cart-empty','Seu carrinho está esperando o próximo upgrade. Explore o catálogo para começar.'));
+    for(const i of cart) {
+      const p=products.find(x=>x.id===i.id), row=make('div','cart-line'); row.dataset.id=i.id;
+      row.append(productImage(p,'')); const info=make('div'); info.append(make('h3','',p.nome),make('p','line-price',money(GZ.cents(p))+' / unidade'));
+      const bottom=make('div','line-bottom'), qty=make('div','qty');
+      const minus=button('−','',()=>quantity(i.id,-1,'minus'),'Diminuir quantidade de '+p.nome); minus.dataset.action='minus';
+      const plus=button('+','',()=>quantity(i.id,1,'plus'),'Aumentar quantidade de '+p.nome); plus.dataset.action='plus'; plus.disabled=i.quantidade>=99;
+      const number=make('span','',i.quantidade); number.setAttribute('aria-label',i.quantidade+' unidade(s)');
+      qty.append(minus,number,plus);
+      bottom.append(qty,button('Remover','remove',()=>{cart=cart.filter(x=>x.id!==i.id);save();renderCart();$('cart-dialog').querySelector('[data-close]').focus();},'Remover '+p.nome),make('strong','subtotal',money(GZ.cents(p)*i.quantidade)));
+      info.append(bottom); row.append(info); $('cart-lines').append(row);
+    }
+    $('cart-total').textContent=money(GZ.total(cart,products)); $('checkout').disabled=!cart.length; $('clear-cart').disabled=!cart.length;
+  }
+  $('cart-open').addEventListener('click',()=>{renderCart();openDialog('cart-dialog');});
+  $('clear-cart').addEventListener('click',()=>{cart=[];save();renderCart();$('cart-dialog').querySelector('[data-close]').focus();announce('Carrinho esvaziado.');});
+  function downloadPdf(data,name) {
+    const blob=new Blob([data],{type:'application/pdf'}), url=URL.createObjectURL(blob);
+    const a=make('a'); a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  }
+  $('checkout').addEventListener('click',()=>{
+    const user=currentUser();if(!user||!cart.length)return;
+    buyerConfirmed=false;$('buyer-form').reset();$('buyer-message').textContent='';
+    $('buyer-name').value=user.nome;$('buyer-email').value=user.email;
+    $('cart-dialog').close();openDialog('buyer-dialog');
+  });
+  $('buyer-dialog').addEventListener('close',()=>{if(!buyerConfirmed&&currentUser()&&cart.length)openDialog('cart-dialog');});
+  $('buyer-form').addEventListener('submit',e=>{
+    e.preventDefault();if(!currentUser()||!cart.length)return;
+    let comprador;
+    try{comprador=GZAccount.validateBuyer({nome:$('buyer-name').value,email:$('buyer-email').value,telefone:$('buyer-phone').value,endereco:$('buyer-address').value});}
+    catch(error){$('buyer-message').textContent=error.message;return;}
+    const now=new Date();
+    const random=window.crypto?.randomUUID?window.crypto.randomUUID().replace(/-/g,'').slice(0,12):Math.random().toString(16).slice(2).padEnd(12,'0').slice(0,12);
+    receipt={tipo:'simulacao-sem-cobranca',schemaVersion:1,codigo:('GZ-'+random).toUpperCase(),data:now.toISOString(),moeda:'BRL',comprador,itens:cart.map(i=>{const p=products.find(x=>x.id===i.id);return {id:p.id,nome:p.nome,quantidade:i.quantidade,precoUnitarioCentavos:GZ.cents(p),subtotalCentavos:GZ.cents(p)*i.quantidade};}),totalCentavos:GZ.total(cart,products)};
+    GZReceipt.validate(receipt);
+    const buyer=$('receipt-buyer');buyer.replaceChildren(make('h3','','COMPRADOR'),make('p','',comprador.nome),make('p','',comprador.email));
+    if(comprador.telefone)buyer.append(make('p','','Telefone: '+comprador.telefone));
+    if(comprador.endereco)buyer.append(make('p','','Endereço: '+comprador.endereco));
+    const region=$('receipt-summary');region.replaceChildren();
+    for(const i of receipt.itens){const row=make('div');row.append(make('span','',i.quantidade+' × '+i.nome),make('strong','',money(i.subtotalCentavos)));region.append(row);}
+    const total=make('div','receipt-total');total.append(make('span','','Total'),make('strong','',money(receipt.totalCentavos)));region.append(total);
+    buyerConfirmed=true;cart=[];save();renderCart();$('buyer-dialog').close();openDialog('checkout-dialog');
+  });
+  $('download-receipt').addEventListener('click',()=>{
+    if(!receipt||!currentUser())return;
+    try{downloadPdf(GZReceipt.create(receipt),'GameZone_Comprovante_'+receipt.codigo+'.pdf');announce('Comprovante PDF preparado para download.');}
+    catch{announce('Não foi possível gerar o comprovante PDF. Tente novamente.',true);}
+  });
+  $('continue-shopping').addEventListener('click',()=>{$('checkout-dialog').close();$('search').focus();});
+  const Speech=window.SpeechRecognition||window.webkitSpeechRecognition;
+  const activePhases=['checking','starting','listening','processing'];
+  const voice=new GZVoice.Controller({
+    Speech, isOnline:()=>navigator.onLine!==false,
+    onState:state=>{
+      const active=activePhases.includes(state.phase), hearing=state.phase==='listening';
+      $('voice-status').textContent=state.message+(state.errorCode?' (Código: '+state.errorCode+')':'');
+      $('voice-status').classList.toggle('voice-error',state.phase==='error'||state.phase==='unsupported');
+      $('voice-dialog').setAttribute('data-voice-state',state.phase);
+      document.querySelector('.voice-orb').classList.toggle('listening',hearing);
+      $('voice-mode').disabled=active;
+      $('voice-cancel').hidden=!active;
+      $('voice-start').disabled=!Speech||state.phase==='processing';
+      $('voice-start').textContent=state.phase==='processing'?'Processando…':active?(hearing?'Concluir fala':'Cancelar ativação'):state.phase==='idle'?'Ativar microfone':'Tentar novamente';
+      $('voice-start').setAttribute('aria-pressed',String(active));
+      $('voice-transcript').textContent=state.transcript||'Sua fala aparecerá aqui.';
+      $('transcript-label').textContent=state.phase==='done'?(state.partial?'TEXTO PARCIAL RECUPERADO':'COMANDO RECONHECIDO'):'O QUE ESTOU OUVINDO';
+      $('voice-results').hidden=state.phase!=='done';
+      $('voice-use-partial').hidden=!(active&&state.transcript.trim());
+      $('voice-engine').textContent=active?(state.engine==='local'?'No dispositivo · pt-BR':state.engine==='browser'?'Serviço do navegador · pt-BR':'Preparando reconhecimento…'):'Microfone desligado';
+      $('voice-hint').textContent=active?state.message:state.phase==='done'?'Busca por voz concluída. Veja os equipamentos encontrados.':state.phase==='error'?state.message:'Voz em português: clique no microfone para começar.';
+    },
+    onResult:(transcript,metadata={})=>{
+      resetFilters();$('search').value=transcript;applyQuery();
+      $('voice-status').textContent=(metadata.partial?'Texto parcial recuperado; confira o campo de busca. ':'Comando reconhecido. ')+$('result-count').textContent+' encontrados.';
+      $('voice-results').textContent='Ver resultados ('+$('products').children.length+')';
+      announce((metadata.partial?'Pesquisa com texto parcial. Confira o termo. ':'Pesquisa por voz concluída. ')+$('result-count').textContent+'.');
+      $('voice-results').focus();
+    }
+  });
+  // Diagnóstico independente: mede áudio localmente, sem armazenar ou transmitir.
+  let micRun=0,micStream=null,micContext=null,micFrame=0,micTimer=0;
+  function stopMicTest(){
+    ++micRun;clearTimeout(micTimer);cancelAnimationFrame(micFrame);
+    if(micStream)micStream.getTracks().forEach(t=>t.stop());micStream=null;
+    if(micContext){try{Promise.resolve(micContext.close()).catch(()=>{});}catch{}micContext=null;}
+    $('mic-test').disabled=false;$('voice-start').disabled=!Speech;
+  }
+  function describeEnvironment(){
+    const embedded=window.top!==window.self;
+    $('mic-environment').textContent='Ambiente: '+(location.protocol==='https:'?'HTTPS':location.protocol==='file:'?'arquivo local':location.protocol)+' · '+(embedded?'página incorporada':'aba própria')+' · API de voz '+(Speech?'disponível':'indisponível')+' · captura '+(navigator.mediaDevices?.getUserMedia?'disponível':'indisponível');
+  }
+  $('mic-test').addEventListener('click',async()=>{
+    voice.cancel();stopMicTest();const token=micRun;
+    $('mic-level').value=0;describeEnvironment();
+    const status=$('mic-test-status');
+    if(!navigator.mediaDevices?.getUserMedia){status.textContent='Captura indisponível. Abra o endereço HTTPS diretamente no Safari ou Chrome.';return;}
+    const AudioCtx=window.AudioContext||window.webkitAudioContext;
+    if(!AudioCtx){status.textContent='Este navegador não oferece medição de som.';return;}
+    $('mic-test').disabled=true;$('voice-start').disabled=true;status.textContent='Autorize o acesso ao microfone se solicitado.';
+    try{
+      // Criado no gesto do usuário para evitar bloqueio de áudio no Safari.
+      const ctx=new AudioCtx();micContext=ctx;const resume=Promise.resolve(ctx.resume()).catch(()=>{});
+      micTimer=setTimeout(()=>{if(token===micRun){stopMicTest();status.textContent='Permissão não respondida. Confira as permissões e tente novamente.';}},20000);
+      const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+      if(token!==micRun){stream.getTracks().forEach(t=>t.stop());return;}
+      micStream=stream;await resume;if(token!==micRun)return;
+      clearTimeout(micTimer);const analyser=ctx.createAnalyser();analyser.fftSize=1024;ctx.createMediaStreamSource(stream).connect(analyser);
+      const samples=new Uint8Array(analyser.fftSize);let peak=0;
+      status.textContent='Microfone autorizado. Fale agora por 5 segundos.';
+      function sample(){if(token!==micRun)return;analyser.getByteTimeDomainData(samples);let sum=0;for(const v of samples){const n=(v-128)/128;sum+=n*n;}const rms=Math.sqrt(sum/samples.length);peak=Math.max(peak,rms);$('mic-level').value=Math.min(100,Math.round(rms*400));micFrame=requestAnimationFrame(sample);}
+      sample();micTimer=setTimeout(()=>{if(token!==micRun)return;stopMicTest();status.textContent=peak>=0.015?'Som detectado! O microfone recebe áudio. Se a busca por voz falhar, o problema pode estar no serviço de reconhecimento.':'Microfone autorizado, mas sem som suficiente. Confira o microfone e fale mais perto; tente novamente.';},5000);
+    }catch(error){if(token!==micRun)return;stopMicTest();status.textContent='Falha na captação: '+(error.name||'erro desconhecido')+'. Confira permissões de microfone no navegador e no sistema.';}
+  });
+  let keyboardDictation=false;
+  const focusSearch=()=>{$('voice-dialog').close();$('search').focus();};
+  $('voice-open').addEventListener('click',()=>{
+    keyboardDictation=false;stopMicTest();describeEnvironment();voice.cancel(true);$('voice-transcript').textContent='Sua fala aparecerá aqui.';$('transcript-label').textContent='O QUE ESTOU OUVINDO';
+    $('voice-status').classList.remove('voice-error');$('voice-dialog').setAttribute('data-voice-state','idle');
+    $('voice-results').hidden=true;$('voice-use-partial').hidden=true;$('voice-cancel').hidden=true;$('voice-mode').disabled=false;
+    $('voice-engine').textContent='Microfone desligado';$('voice-start').textContent='Ativar microfone';$('voice-start').setAttribute('aria-pressed','false');
+    $('voice-status').textContent=!Speech?'Seu navegador não oferece reconhecimento de voz. Use a busca digitada.':navigator.onLine===false?'Você está offline. A voz só funcionará se o reconhecimento local estiver disponível.':'Pronto para ouvir. Ative o microfone para começar.';
+    if(!window.isSecureContext || location.protocol==='file:')$('voice-status').textContent='Para usar o microfone, abra o endereço HTTPS publicado no navegador. Nesta prévia ou arquivo local, use o ditado do teclado.';
+    else if(window.top!==window.self)$('voice-status').textContent='Se o microfone estiver bloqueado nesta prévia, abra o site em uma aba própria.';
+    $('voice-start').disabled=!Speech;openDialog('voice-dialog');
+  });
+  $('voice-text').addEventListener('click',focusSearch);
+  $('voice-dictation').addEventListener('click',()=>{
+    keyboardDictation=true;focusSearch();
+    announce('Toque no microfone do teclado do celular (ou use o ditado do sistema), fale o produto e confira a busca.');
+    $('voice-hint').textContent='Ditado do teclado: toque no microfone do teclado e fale o produto. No Windows, use Win + H.';
+  });
+  $('voice-use-partial').addEventListener('click',()=>{if(voice.active&&voice.state.transcript.trim())voice.usePartialOrFail('Nenhum texto reconhecido.');});
+  $('voice-results').addEventListener('click',()=>{$('voice-dialog').close();$('catalogo').scrollIntoView({block:'start'});$('search').focus({preventScroll:true});});
+  $('voice-dialog').addEventListener('close',()=>{
+    const completed=voice.state.phase==='done';stopMicTest();
+    voice.cancel(true);document.querySelector('.voice-orb').classList.remove('listening');
+    $('voice-transcript').textContent='Sua fala aparecerá aqui.';
+    if(keyboardDictation)return;
+    $('voice-hint').textContent=completed?'Busca por voz concluída. Veja os equipamentos encontrados.':'Microfone desligado. Você pode pesquisar por voz ou digitar.';
+  });
+  $('voice-start').addEventListener('click',()=>{
+    if(voice.active)voice.stop();else {stopMicTest();voice.start($('voice-mode').value);}
+  });
+  $('voice-cancel').addEventListener('click',()=>voice.cancel());
+  // A permissão do sistema pode ocultar temporariamente a página no celular.
+  // Não cancela por visibilitychange: o iOS pode ocultar a aba durante o diálogo de permissão.
+  window.addEventListener('pagehide',()=>{stopMicTest();voice.cancel(true);});
+  if(!Speech)$('voice-hint').textContent='Seu navegador não oferece voz. A pesquisa digitada continua disponível.';
+  function enterStore(user){
+    $('auth-screen').hidden=true;
+    $('storefront').hidden=false;
+    $('storefront').removeAttribute('inert');
+    $('storefront').inert=false;
+    $('account-display').textContent=user.nome;
+    $('account-display').title=user.nome;
+    $('logout').textContent=guestSession?'Voltar':'Sair';
+    window.scrollTo(0,0);
+  }
+  // A loja pública é uma simulação. O visitante não cria uma conta nem contorna o servidor Java.
+  if(!serverMode){
+    $('guest-entry').hidden=false;$('guest-note').hidden=false;
+    $('guest-entry').addEventListener('click',()=>{
+      if(account.busy)return;
+      guestSession={nome:'Visitante',email:'',username:'visitante'};
+      $('auth-form').reset();
+      enterStore(guestSession);
+    });
+  }
+  async function configureAccess(){
+    try{firstAccess=!(await account.hasAccount());$('auth-message').textContent='';$('auth-submit').disabled=false;if(!serverMode&&!window.crypto?.subtle){$('auth-submit').disabled=true;$('auth-message').textContent='Cadastro e login indisponíveis neste ambiente. Entre como visitante ou abra o site publicado por HTTPS.';}}
+    catch(error){$('auth-message').textContent=error.message+(!serverMode?' Você pode entrar como visitante.':'');$('auth-submit').disabled=true;return;}
+    renderAccess();
+  }
+  function renderAccess(){
+    $('registration-fields').hidden=!firstAccess;$('registration-fields').disabled=!firstAccess;
+    $('confirm-password-field').hidden=!firstAccess;$('account-confirm').disabled=!firstAccess;
+    $('account-password').autocomplete=firstAccess?'new-password':'current-password';
+    $('auth-title').textContent=firstAccess?'Crie seu acesso.':'Entre no jogo.';
+    $('auth-intro').textContent=firstAccess?(serverMode?'Cadastre seu usuário para acessar a loja neste servidor.':'Crie sua conta de demonstração com um usuário e uma senha.'):(serverMode?'Entre com o usuário e a senha cadastrados no servidor.':'Use o usuário e a senha cadastrados neste navegador.');
+    $('auth-submit').textContent=firstAccess?'Criar meu acesso':'Entrar';
+    $('auth-toggle').hidden=false;
+    $('auth-toggle').textContent=firstAccess?'Já tenho conta — Entrar':'Não tenho conta — Criar cadastro';
+  }
+  $('auth-toggle').addEventListener('click',()=>{if($('auth-submit').disabled && account.busy)return;firstAccess=!firstAccess;$('auth-form').reset();$('account-password').type='password';$('account-confirm').type='password';if(!$('auth-submit').disabled)$('auth-message').textContent='';renderAccess();(firstAccess?$('account-name'):$('account-username')).focus();});
+  $('show-password').addEventListener('change',()=>{const type=$('show-password').checked?'text':'password';$('account-password').type=type;$('account-confirm').type=type;});
+  $('auth-form').addEventListener('submit',async e=>{
+    e.preventDefault();$('auth-message').textContent='';$('auth-submit').disabled=true;$('auth-submit').textContent='Aguarde…';$('guest-entry').disabled=true;$('auth-toggle').disabled=true;
+    try{
+      const input={username:$('account-username').value,password:$('account-password').value,confirm:$('account-confirm').value,nome:$('account-name').value,email:$('account-email').value};
+      const user=firstAccess?await account.register(input):await account.login(input);
+      $('account-password').value='';$('account-confirm').value='';$('show-password').checked=false;$('account-password').type='password';$('account-confirm').type='password';
+      guestSession=null;enterStore(user);
+      $('cart-open').focus();
+      if(!account.persistent)announce('O cadastro ficará apenas nesta sessão porque o navegador bloqueou o salvamento local.',true);
+    }catch(error){$('auth-message').textContent=error.message+(!serverMode?' Você também pode entrar como visitante.':'');}
+    finally{$('guest-entry').disabled=false;$('auth-toggle').disabled=false;$('auth-submit').disabled=false;$('auth-submit').textContent=firstAccess?'Criar meu acesso':'Entrar';}
+  });
+  $('logout').addEventListener('click',()=>{
+    guestSession=null;
+    Promise.resolve(account.logout()).catch(()=>announce('Não foi possível encerrar a sessão no servidor.',true));voice.cancel(true);buyerConfirmed=true;
+    document.querySelectorAll('dialog[open]').forEach(d=>d.close());
+    receipt=null;$('receipt-buyer').replaceChildren();$('receipt-summary').replaceChildren();$('buyer-form').reset();
+    $('auth-form').reset();$('account-password').type='password';$('account-confirm').type='password';
+    $('storefront').hidden=true;$('storefront').inert=true;$('auth-screen').hidden=false;
+    configureAccess().then(()=>$('account-username').focus());
+  });
+  await configureAccess();
+  if(serverMode){
+    const existing=await account.restore();
+    if(existing)enterStore(existing);
+  }
+  renderCategories();renderProducts();renderCart();updateSemantics();
+})();
+
+</script>
+</body>
+</html>
